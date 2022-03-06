@@ -8,9 +8,12 @@
 + [EmEditor](https://www.emeditor.com/)
   + DMAZM-WHY52-AX222-ZQJXN-79JXH
 + [Sublime Text](https://www.sublimetext.com/) 
++ [Notepad++](https://github.com/notepad-plus-plus/notepad-plus-plus/releases)
++ 
 # 本地代理
 + [Proxifier](https://www.proxifier.com/)
   +   模拟器代理规则[雷电、夜神] `ldboxheadless.exe; noxvmhandle.exe`
+
 # 安卓抓包
 ## 绕过证书固定
 + [JustTrustMe](https://github.com/Fuzion24/JustTrustMe)
@@ -18,6 +21,7 @@
 + [burpsuite+brida](https://github.com/portswigger/brida)
 + [Sandroid-ssl-pinning-demo(证书固定演示)](https://github.com/httptoolkit/android-ssl-pinning-demo/releases)
 + [apk-mitm(自动修改apk)](https://github.com/shroudedcode/apk-mitm)
+
 # 参考链接
 + https://medium.com/globant/testing-ssl-pinning-in-a-mobile-application-2dcac9ab3d0c
 + https://www.hackingarticles.in/android-hooking-and-sslpinning-using-objection-framework/
