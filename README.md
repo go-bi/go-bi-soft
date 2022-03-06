@@ -16,6 +16,7 @@
 + [Android-SSL-TrustKiller](https://github.com/iSECPartners/Android-SSL-TrustKiller)
 + [burpsuite+brida](https://github.com/portswigger/brida)
 + [Sandroid-ssl-pinning-demo(证书固定演示)](https://github.com/httptoolkit/android-ssl-pinning-demo/releases)
++ [apk-mitm(自动修改apk)](https://github.com/shroudedcode/apk-mitm)
 # 参考链接
 + https://medium.com/globant/testing-ssl-pinning-in-a-mobile-application-2dcac9ab3d0c
 + https://www.hackingarticles.in/android-hooking-and-sslpinning-using-objection-framework/
@@ -25,6 +26,7 @@
 + https://codeshare.frida.re/@sowdust/universal-android-ssl-pinning-bypass-2/
 + https://justinpineda.com/2020/11/27/bypassing-ssl-pinning-and-traffic-redirection-to-burp-suite-using-mobsf-and-genymotion/
 + https://www.freebuf.com/sectool/280622.html
++ https://github.com/shroudedcode/apk-mitm
 
 # 漏洞wiki
 + https://cobalt.io/vulnerability-wiki
