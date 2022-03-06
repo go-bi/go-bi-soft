@@ -10,6 +10,7 @@
 + [Sublime Text](https://www.sublimetext.com/) 
 # 本地代理
 + [Proxifier](https://www.proxifier.com/)
+  +   模拟器代理规则[雷电、夜神] `ldboxheadless.exe; noxvmhandle.exe`
 # 安卓抓包
 ## 绕过证书固定
 + [JustTrustMe](https://github.com/Fuzion24/JustTrustMe)
