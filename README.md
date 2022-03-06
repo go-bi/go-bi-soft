@@ -49,3 +49,6 @@
 
 # xss平台
 + https://xsshunter.com/
+
+# 实验软件环境
++ [Redis for Windows](https://github.com/tporadowski/redis/releases/)
