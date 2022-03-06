@@ -31,4 +31,18 @@
 
 # 漏洞wiki
 + https://cobalt.io/vulnerability-wiki
++ https://github.com/swisskyrepo/PayloadsAllTheThings
 
+# Md5解密
++ https://www.cmd5.com/
++ https://www.somd5.com/
++ https://hashes.com/zh/decrypt/hash
+
+# 在线反编译器
++ [JAR String Editor](https://www.decompiler.com/jar-string-editor)
+
+# 文件传输
++ https://transfer.sh/
+
+# 端口转发
++ https://ngrok.com/
