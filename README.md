@@ -15,8 +15,11 @@
 + [JustTrustMe](https://github.com/Fuzion24/JustTrustMe)
 + [Android-SSL-TrustKiller](https://github.com/iSECPartners/Android-SSL-TrustKiller)
 + [burpsuite+brida](https://github.com/portswigger/brida)
++ [Sandroid-ssl-pinning-demo(证书固定演示)](https://github.com/httptoolkit/android-ssl-pinning-demo/releases)
 # 参考链接
 + https://medium.com/globant/testing-ssl-pinning-in-a-mobile-application-2dcac9ab3d0c
++ https://www.hackingarticles.in/android-hooking-and-sslpinning-using-objection-framework/
++ https://github.com/httptoolkit/android-ssl-pinning-demo
 + https://vavkamil.cz/2019/09/15/how-to-bypass-android-certificate-pinning-and-intercept-ssl-traffic/
 + https://arben.sh/bugbounty/Configuring-Frida-with-Burp-and-GenyMotion-to-bypass-SSL-Pinning/
 + https://codeshare.frida.re/@sowdust/universal-android-ssl-pinning-bypass-2/
