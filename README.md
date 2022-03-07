@@ -56,3 +56,4 @@
 
 # 实验软件环境
 + [Redis for Windows](https://github.com/tporadowski/redis/releases/)
+  + [Another Redis DeskTop Manage](https://github.com/qishibo/AnotherRedisDesktopManager/releases) 
