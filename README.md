@@ -1,5 +1,11 @@
 # go-bi-soft
-
+```
+ufw allow 22
+ufw delete allow 22
+ufw enable
+ufw disable
+ufw status
+```
 # 主机推荐
 + https://www.vultr.com/
 + https://www.dynu.com/
