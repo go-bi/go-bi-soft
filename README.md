@@ -1,4 +1,10 @@
 # go-bi-soft
+
+# 主机推荐
++ https://www.vultr.com/
++ https://www.dynu.com/
++
+
 # 搜索引擎
 + https://www.greynoise.io/
 + https://www.zoomeye.org/
