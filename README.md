@@ -22,6 +22,8 @@ ufw status
 + https://rapiddns.io/
 + https://dnsdumpster.com/
 + https://www.virustotal.com/gui/home/search
++ https://domainbigdata.com/
++ https://www.robtex.com/cidr/
 
 # 编辑器
 + [EmEditor](https://www.emeditor.com/)
