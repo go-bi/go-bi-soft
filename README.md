@@ -15,6 +15,13 @@ ufw status
 + https://www.greynoise.io/
 + https://www.zoomeye.org/
 + https://www.shodan.io/
++ https://fofa.info/
++ https://publicwww.com/
++ https://natlas.io/
++ https://www.qwant.com/
++ https://rapiddns.io/
++ https://dnsdumpster.com/
++ https://www.virustotal.com/gui/home/search
 
 # 编辑器
 + [EmEditor](https://www.emeditor.com/)
