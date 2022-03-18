@@ -25,6 +25,13 @@ ufw status
 + https://domainbigdata.com/
 + https://www.robtex.com/cidr/
 
+### gost(GO语言)实现的安全隧道
+```
+./gost -L=:1080	//作为标准HTTP/SOCKS5代理
+./gost -L=admin:123456@:1080	//设置代理认证信息
+./gost -L=http2://:443 -L=socks5://:1080 -L=ss://aes-128-cfb:123456@:8338	//多端口监听
+nohup ./gost -L=:1080 > /dev/null 2>&1 &	//后台运行不记录日志
+```
 # ipv4的3段私有IP地址
 
 ```
