@@ -34,6 +34,11 @@ ufw status
 # 文件传输
 + https://transfer.sh/
 
+# 加密解密
++ https://www.cmd5.com/
++ https://www.somd5.com/
++ https://hashes.com/zh/decrypt/hash
++ https://www.jsjiami.com/
 # gost(GO语言)实现的安全隧道
 ```
 ./gost -L=:1080	//作为标准HTTP/SOCKS5代理
@@ -379,16 +384,8 @@ wget https://ftp.tu-chemnitz.de/pub/linux/dag/redhat/el7/en/x86_64/rpmforge/RPMS
 + https://cobalt.io/vulnerability-wiki
 + https://github.com/swisskyrepo/PayloadsAllTheThings
 
-# Md5解密
-+ https://www.cmd5.com/
-+ https://www.somd5.com/
-+ https://hashes.com/zh/decrypt/hash
-
 # 在线反编译器
 + [JAR String Editor](https://www.decompiler.com/jar-string-editor)
-
-# 文件传输
-+ https://transfer.sh/
 
 # 端口转发
 + https://ngrok.com/
