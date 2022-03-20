@@ -25,7 +25,14 @@ ufw status
 + https://domainbigdata.com/
 + https://www.robtex.com/cidr/
 
-### gost(GO语言)实现的安全隧道
+# 反弹shell
++ https://www.revshells.com/
+
+# OS提权
++ https://gtfobins.github.io/
+
+
+# gost(GO语言)实现的安全隧道
 ```
 ./gost -L=:1080	//作为标准HTTP/SOCKS5代理
 ./gost -L=admin:123456@:1080	//设置代理认证信息
