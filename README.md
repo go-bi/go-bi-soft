@@ -31,6 +31,8 @@ ufw status
 # OS提权
 + https://gtfobins.github.io/
 
+# 文件传输
++ https://transfer.sh/
 
 # gost(GO语言)实现的安全隧道
 ```
