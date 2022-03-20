@@ -38,6 +38,8 @@ ufw status
 + https://www.cmd5.com/
 + https://www.somd5.com/
 + https://hashes.com/zh/decrypt/hash
++ https://encode-decode.com/
++ https://hashcat.net/hashcat/
 + https://www.jsjiami.com/
 # gost(GO语言)实现的安全隧道
 ```
