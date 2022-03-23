@@ -25,6 +25,10 @@ ufw status
 + https://domainbigdata.com/
 + https://www.robtex.com/cidr/
 
+# 小工具
++ https://securityxploded.com/
++ 
+
 # 反弹shell
 + https://www.revshells.com/
 
