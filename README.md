@@ -27,7 +27,7 @@ ufw status
 
 # 小工具
 + https://securityxploded.com/
-+ 
++ https://www.oracle.com/java/technologies/downloads/
 
 # 反弹shell
 + https://www.revshells.com/
