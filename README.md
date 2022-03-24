@@ -403,3 +403,4 @@ wget https://ftp.tu-chemnitz.de/pub/linux/dag/redhat/el7/en/x86_64/rpmforge/RPMS
 + [Redis for Windows](https://github.com/tporadowski/redis/releases/)
 + https://github.com/MicrosoftArchive/redis/releases
   + [Another Redis DeskTop Manage](https://github.com/qishibo/AnotherRedisDesktopManager/releases) 
+  + https://github.com/MicrosoftArchive/redis/releases
