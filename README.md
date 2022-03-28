@@ -28,6 +28,7 @@ ufw status
 # 小工具
 + https://securityxploded.com/
 + https://mirrors.huaweicloud.com/home
++ https://sysin.org/
 
 # 反弹shell
 + https://www.revshells.com/
