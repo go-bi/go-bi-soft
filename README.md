@@ -29,6 +29,7 @@ ufw status
 + https://securityxploded.com/
 + https://mirrors.huaweicloud.com/home
 + https://sysin.org/
++ https://breakingsecurity.net/
 
 # 反弹shell
 + https://www.revshells.com/
