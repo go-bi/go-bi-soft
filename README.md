@@ -401,6 +401,9 @@ wget https://ftp.tu-chemnitz.de/pub/linux/dag/redhat/el7/en/x86_64/rpmforge/RPMS
 # 端口转发
 + https://ngrok.com/
 
+# 编程开发
++ http://www.rohitab.com/discuss/forum/9-source-codes/
+
 # xss平台
 + https://xsshunter.com/
 
