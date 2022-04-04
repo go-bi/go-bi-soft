@@ -50,6 +50,7 @@ ufw status
 + https://www.jsjiami.com/
 + https://okjson.608558.com/encrypt/openssl_encode
 + https://www.devglan.com/online-tools/triple-des-encrypt-decrypt
++ http://tool.chacuo.net/cryptrijndael
 # gost(GO语言)实现的安全隧道
 ```
 ./gost -L=:1080	//作为标准HTTP/SOCKS5代理
