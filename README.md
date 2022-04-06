@@ -10,6 +10,7 @@ ufw status
 + https://www.vultr.com/
 + https://www.dynu.com/
 + https://www.gmail.com/
++ https://vgostore.xyz/product/windows-vps/
 
 # 搜索引擎
 + https://www.greynoise.io/
