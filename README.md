@@ -371,7 +371,8 @@ wget https://ftp.tu-chemnitz.de/pub/linux/dag/redhat/el7/en/x86_64/rpmforge/RPMS
   + DMAZM-WHY52-AX222-ZQJXN-79JXH
 + [Sublime Text](https://www.sublimetext.com/) 
 + [Notepad++](https://github.com/notepad-plus-plus/notepad-plus-plus/releases)
-+ 
++ [Typora](https://download.typora.io/windows/typora-setup-x64-0.11.18.exe)
+
 # 本地代理
 + [Proxifier](https://www.proxifier.com/)
   +   模拟器代理规则[雷电、夜神] `ldboxheadless.exe; noxvmhandle.exe`
