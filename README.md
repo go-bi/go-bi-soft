@@ -31,6 +31,7 @@ ufw status
 + https://mirrors.huaweicloud.com/home
 + https://sysin.org/
 + https://breakingsecurity.net/
++ https://nssm.cc/download
 
 # 反弹shell
 + https://www.revshells.com/
