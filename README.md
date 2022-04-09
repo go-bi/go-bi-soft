@@ -30,6 +30,7 @@ ufw status
 # 小工具
 + https://securityxploded.com/
 + https://mirrors.huaweicloud.com/home
++ http://www.nirsoft.net/
 + https://sysin.org/
 + https://breakingsecurity.net/
 + https://nssm.cc/download
