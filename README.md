@@ -40,6 +40,7 @@ ufw status
 
 # OS提权
 + https://gtfobins.github.io/
++ https://lolbas-project.github.io/
 + https://www.hackingarticles.in/category/red-teaming/page/2/
 + https://cyber-security.tk/exploit/Linux-Privilege-Escalation/
 + https://cyber-security.tk/exploit/Windows-Privilege-Escalation/
