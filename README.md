@@ -17,6 +17,7 @@ ufw status
 + https://www.greynoise.io/
 + https://www.zoomeye.org/
 + https://www.shodan.io/
++ https://search.censys.io/
 + https://fofa.info/
 + https://publicwww.com/
 + https://natlas.io/
