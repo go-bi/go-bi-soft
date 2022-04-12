@@ -404,6 +404,7 @@ wget https://ftp.tu-chemnitz.de/pub/linux/dag/redhat/el7/en/x86_64/rpmforge/RPMS
 # 漏洞wiki
 + https://cobalt.io/vulnerability-wiki
 + https://github.com/swisskyrepo/PayloadsAllTheThings
++ https://attackdefense.com/
 
 # 在线反编译器
 + [JAR String Editor](https://www.decompiler.com/jar-string-editor)
