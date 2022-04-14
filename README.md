@@ -100,9 +100,12 @@ MSVC++ 14.3  _MSC_VER == 1930 (Visual Studio 2022 Version 17.0)
 ```
 # Visual Studio各版本激活码
 ```
-Visual Studio Professional 2015 HMGNV-WCYXV-X7G9W-YCX63-B98R2
+Visual Studio Professional 2012 4D974-9QX42-9Y43G-YJ7JG-JDYBP
 Visual Studio Professional 2013 XDM3T-W3T3V-MGJWK-8BFVD-GVPKY
 Visual Studio Professional 2015 HMGNV-WCYXV-X7G9W-YCX63-B98R2
+Visual Studio Professional 2017 KBJFW-NXHK6-W4WJM-CRMQB-G3CDH
+Visual Studio Professional 2019
+Visual Studio Professional 2022
 ```
 
 # gost(GO语言)实现的安全隧道
