@@ -59,6 +59,65 @@ ufw status
 + https://okjson.608558.com/encrypt/openssl_encode
 + https://www.devglan.com/online-tools/triple-des-encrypt-decrypt
 + http://tool.chacuo.net/cryptrijndael
+
+# 解决方案 (.sln) 文件
+## 文件头
+.sln 文件的标头如下所示：
+```
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28701.123
+MinimumVisualStudioVersion = 10.0.40219.1
+```
+```
+定义
+Microsoft Visual Studio Solution File, Format Version 12.00
+定义文件格式版本的标准标头。
+
+# Visual Studio Version 16
+最近一次Visual Studio保存 (文件) 版本。 此信息控制解决方案图标中的版本号。
+
+VisualStudioVersion = 16.0.28701.123
+最近一次Visual Studio保存 (的完整) 版本。 如果解决方案文件由具有相同主Visual Studio版本的较新版本保存，则此值不会更新，以减少该文件中的改动。
+
+MinimumVisualStudioVersion = 10.0.40219.1
+可以 (此解决方案) Visual Studio版本的最低版本。
+```
+# Visual Studio版本与MSVC版本号的对应关系
+```
+MSC    1.0   _MSC_VER == 100
+MSC    2.0   _MSC_VER == 200
+MSC    3.0   _MSC_VER == 300
+MSC    4.0   _MSC_VER == 400
+MSC    5.0   _MSC_VER == 500
+MSC    6.0   _MSC_VER == 600
+MSC    7.0   _MSC_VER == 700
+MSVC++ 1.0   _MSC_VER == 800
+MSVC++ 2.0   _MSC_VER == 900
+MSVC++ 4.0   _MSC_VER == 1000 (Developer Studio 4.0)
+MSVC++ 4.2   _MSC_VER == 1020 (Developer Studio 4.2)
+MSVC++ 5.0   _MSC_VER == 1100 (Visual Studio 97 version 5.0)
+MSVC++ 6.0   _MSC_VER == 1200 (Visual Studio 6.0 version 6.0)
+MSVC++ 7.0   _MSC_VER == 1300 (Visual Studio .NET 2002 version 7.0)
+MSVC++ 7.1   _MSC_VER == 1310 (Visual Studio .NET 2003 version 7.1)
+MSVC++ 8.0   _MSC_VER == 1400 (Visual Studio 2005 version 8.0)
+MSVC++ 9.0   _MSC_VER == 1500 (Visual Studio 2008 version 9.0)
+MSVC++ 10.0  _MSC_VER == 1600 (Visual Studio 2010 version 10.0)
+MSVC++ 11.0  _MSC_VER == 1700 (Visual Studio 2012 version 11.0)
+MSVC++ 12.0  _MSC_VER == 1800 (Visual Studio 2013 version 12.0)
+MSVC++ 14.0  _MSC_VER == 1900 (Visual Studio 2015 version 14.0)
+MSVC++ 14.1  _MSC_VER == 1910 (Visual Studio 2017 version 15.0)
+MSVC++ 14.11 _MSC_VER == 1911 (Visual Studio 2017 version 15.3)
+MSVC++ 14.12 _MSC_VER == 1912 (Visual Studio 2017 version 15.5)
+MSVC++ 14.13 _MSC_VER == 1913 (Visual Studio 2017 version 15.6)
+MSVC++ 14.14 _MSC_VER == 1914 (Visual Studio 2017 version 15.7)
+MSVC++ 14.15 _MSC_VER == 1915 (Visual Studio 2017 version 15.8)
+MSVC++ 14.16 _MSC_VER == 1916 (Visual Studio 2017 version 15.9)
+MSVC++ 14.2  _MSC_VER == 1920 (Visual Studio 2019 Version 16.0)
+MSVC++ 14.21 _MSC_VER == 1921 (Visual Studio 2019 Version 16.1)
+MSVC++ 14.22 _MSC_VER == 1922 (Visual Studio 2019 Version 16.2)
+```
+
 # gost(GO语言)实现的安全隧道
 ```
 ./gost -L=:1080	//作为标准HTTP/SOCKS5代理
