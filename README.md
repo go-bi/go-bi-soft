@@ -105,7 +105,7 @@ Visual Studio Professional 2013 XDM3T-W3T3V-MGJWK-8BFVD-GVPKY
 Visual Studio Professional 2015 HMGNV-WCYXV-X7G9W-YCX63-B98R2
 Visual Studio Professional 2017 KBJFW-NXHK6-W4WJM-CRMQB-G3CDH
 Visual Studio Professional 2019
-Visual Studio Professional 2022
+Visual Studio Professional 2022 TD244-P4NB7-YQ6XK-Y8MMM-YWV2J
 ```
 
 # gost(GO语言)实现的安全隧道
