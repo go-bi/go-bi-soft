@@ -107,15 +107,8 @@ MSVC++ 11.0  _MSC_VER == 1700 (Visual Studio 2012 version 11.0)
 MSVC++ 12.0  _MSC_VER == 1800 (Visual Studio 2013 version 12.0)
 MSVC++ 14.0  _MSC_VER == 1900 (Visual Studio 2015 version 14.0)
 MSVC++ 14.1  _MSC_VER == 1910 (Visual Studio 2017 version 15.0)
-MSVC++ 14.11 _MSC_VER == 1911 (Visual Studio 2017 version 15.3)
-MSVC++ 14.12 _MSC_VER == 1912 (Visual Studio 2017 version 15.5)
-MSVC++ 14.13 _MSC_VER == 1913 (Visual Studio 2017 version 15.6)
-MSVC++ 14.14 _MSC_VER == 1914 (Visual Studio 2017 version 15.7)
-MSVC++ 14.15 _MSC_VER == 1915 (Visual Studio 2017 version 15.8)
-MSVC++ 14.16 _MSC_VER == 1916 (Visual Studio 2017 version 15.9)
 MSVC++ 14.2  _MSC_VER == 1920 (Visual Studio 2019 Version 16.0)
-MSVC++ 14.21 _MSC_VER == 1921 (Visual Studio 2019 Version 16.1)
-MSVC++ 14.22 _MSC_VER == 1922 (Visual Studio 2019 Version 16.2)
+MSVC++ 14.3  _MSC_VER == 1930 (Visual Studio 2022 Version 17.0)
 ```
 
 # gost(GO语言)实现的安全隧道
