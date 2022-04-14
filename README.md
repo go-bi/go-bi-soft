@@ -85,18 +85,6 @@ MinimumVisualStudioVersion = 10.0.40219.1
 ```
 # Visual Studio版本与MSVC版本号的对应关系
 ```
-MSC    1.0   _MSC_VER == 100
-MSC    2.0   _MSC_VER == 200
-MSC    3.0   _MSC_VER == 300
-MSC    4.0   _MSC_VER == 400
-MSC    5.0   _MSC_VER == 500
-MSC    6.0   _MSC_VER == 600
-MSC    7.0   _MSC_VER == 700
-MSVC++ 1.0   _MSC_VER == 800
-MSVC++ 2.0   _MSC_VER == 900
-MSVC++ 4.0   _MSC_VER == 1000 (Developer Studio 4.0)
-MSVC++ 4.2   _MSC_VER == 1020 (Developer Studio 4.2)
-MSVC++ 5.0   _MSC_VER == 1100 (Visual Studio 97 version 5.0)
 MSVC++ 6.0   _MSC_VER == 1200 (Visual Studio 6.0 version 6.0)
 MSVC++ 7.0   _MSC_VER == 1300 (Visual Studio .NET 2002 version 7.0)
 MSVC++ 7.1   _MSC_VER == 1310 (Visual Studio .NET 2003 version 7.1)
