@@ -59,6 +59,7 @@ ufw status
 + https://okjson.608558.com/encrypt/openssl_encode
 + https://www.devglan.com/online-tools/triple-des-encrypt-decrypt
 + http://tool.chacuo.net/cryptrijndael
++ https://www.javainuse.com/aesgenerator
 
 # 解决方案 (.sln) 文件
 ## 文件头
