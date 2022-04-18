@@ -61,6 +61,10 @@ ufw status
 + http://tool.chacuo.net/cryptrijndael
 + https://www.javainuse.com/aesgenerator
 
+# WinRAR 6.11 下载
++ https://www.win-rar.com/fileadmin/winrar-versions/sc/sc20220317/rrlb/winrar-x64-611sc.exe
++ https://www.win-rar.com/fileadmin/winrar-versions/sc/sc20220317/rrlb/winrar-x32-611sc.exe
+
 # 解决方案 (.sln) 文件
 ## 文件头
 .sln 文件的标头如下所示：
