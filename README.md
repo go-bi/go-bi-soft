@@ -253,6 +253,7 @@ sc query cc_cometDaemon.exe	//检查停止状态
 sc config cc_cometDaemon.exe start=disabled	//禁用服务
 sc config cc_cometDaemon.exe start=auto	//服务自启动
 wmic process where Name="xxx.exe" get ProcessId,name,commandline	//查询某进程信息.进程id、进程名、执行命令 
+powershell.exe -command "ls '%cd%\*.*' | foreach-object { $_.LastWriteTime = '01/01/2021 01:01:01'; $_.CreationTime = '02/02/2021 01:01:01'; $_.LastAccessTime = '03/03/2021 01:01:01' }" //windows 命令行修改文件时间戳
 C:/WINNT/system32/inetsrv/MetaBase.bin	//IIS 5 中，IIS 的配置文件
 C:/WINDOWS/system32/inetsrv/MetaBase.xml	//IIS 6 中，IIS 的配置文件
 C:/WINDOWS/system32/inetstr/config/applicationHost.config	//IIS 7 中，IIS 的配置文件
