@@ -488,6 +488,8 @@ sudo apt-get install -y unzip gcc make libpcap-dev
 wget https://github.com/robertdavidgraham/masscan/archive/master.zip
 unzip master.zip && cd masscan*
 sudo make && sudo make install && cd ../ && rm -rf master.zip masscan*
+
+masscan -p6379 --max-rate 400000 192.168.0.1/24 |awk '{print $6}'
 ```
 # nbtscan安装
 ```
