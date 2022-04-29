@@ -35,6 +35,7 @@ ufw status
 + https://sysin.org/
 + https://breakingsecurity.net/
 + https://nssm.cc/download
++ https://www.kahusecurity.com/
 
 # 反弹shell
 + https://www.revshells.com/
