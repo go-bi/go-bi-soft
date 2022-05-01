@@ -12,6 +12,7 @@ ufw status
 + https://www.gmail.com/
 + https://contabo.com/de/
 + https://ngrok.com/
++ https://localxpose.io/
 
 # 搜索引擎
 + https://www.greynoise.io/
