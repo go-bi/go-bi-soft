@@ -241,6 +241,7 @@ net user test 1234 /add	//添加新用户
 net localgroup administrators test /add	//添加新用户到管理员组
 taskkill /F /IM "cmd.exe"	//按名称杀死进程
 taskkill /pid xxx -t -f	//强制结束pid进程和子进程
+wmic process get name,executablepath,processid  //查看任务管理器名称，路径，pid
 shutdown /r /t 0	//立即重启
 shutdown /s /t 0	//立即关机
 fsutil fsinfo drives	//查找系统上的所有硬盘/存储分区
