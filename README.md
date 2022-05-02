@@ -13,7 +13,7 @@ ufw status
 + https://contabo.com/de/
 + https://ngrok.com/
 + https://localxpose.io/
-+ https://localtonet.com/
++ http://localhost.run/
 
 # 搜索引擎
 + https://www.greynoise.io/
