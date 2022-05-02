@@ -12,6 +12,7 @@ ufw status
 + https://www.gmail.com/
 + https://contabo.com/de/
 + https://ngrok.com/
++ https://localtonet.com/
 + https://localxpose.io/
 + http://localhost.run/
 
