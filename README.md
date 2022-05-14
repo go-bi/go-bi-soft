@@ -281,7 +281,8 @@ attrib +h "your_folder_or_file"	//隐藏文件夹或文件
 attrib +h "d:\demo\*" /s /d
 dir /a:h	//列出隐藏文件
 attrib -s -h "your_hidden_folder_or_file"	//取消隐藏文件夹或文件
-
+PowerShell Compress-Archive . filename.zip  //压缩当前目录为zip
+PowerShell Expand-Archive filename.zip .  //解压zip
 REG add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender" /v "DisableAntiSpyware" /d 1 /t REG_DWORD /f	//关闭 Windows Defender 杀毒
 REG add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender" /v "DisableAntiSpyware" /d 0 /t REG_DWORD /f	//开启 Windows Defender 杀毒
 REG add HKLM\SYSTEM\CurrentControlSet\Control\SecurityProviders\WDigest /v UseLogonCredential /t REG_DWORD /d 1	//将regedit值设置为1并启动wdigest auth抓取明文密码
