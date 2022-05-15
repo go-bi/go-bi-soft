@@ -615,3 +615,5 @@ init:stop().  //退出Erlang Shell是使用init:stop函数完成的
 # 持久化参考
 + https://redcanary.com/blog/netwire-remote-access-trojan-on-linux/
 
+#反病毒
++ https://krabsonsecurity.com/
