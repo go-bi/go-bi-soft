@@ -606,3 +606,7 @@ init:stop().  //退出Erlang Shell是使用init:stop函数完成的
 + https://securityboulevard.com/2018/09/erlang-authenticated-remote-code-execution/
 + https://0xdf.gitlab.io/2018/09/15/htb-canape.html#couchdb-execution
 + https://deepsurface.com/deepsurface-security-advisory-local-privilege-escalation-in-erlang-on-windows-cve-2021-29221/
+
+# 持久化参考
++ https://redcanary.com/blog/netwire-remote-access-trojan-on-linux/
+
