@@ -538,10 +538,11 @@ wget https://ftp.tu-chemnitz.de/pub/linux/dag/redhat/el7/en/x86_64/rpmforge/RPMS
 + https://www.freebuf.com/sectool/280622.html
 + https://github.com/shroudedcode/apk-mitm
 
-# 漏洞wiki
+# 漏洞wiki&学习
 + https://cobalt.io/vulnerability-wiki
 + https://github.com/swisskyrepo/PayloadsAllTheThings
 + https://attackdefense.com/
++ https://vk9-sec.com/
 
 # 在线反编译器
 + [JAR String Editor](https://www.decompiler.com/jar-string-editor)
