@@ -543,6 +543,7 @@ wget https://ftp.tu-chemnitz.de/pub/linux/dag/redhat/el7/en/x86_64/rpmforge/RPMS
 + https://github.com/swisskyrepo/PayloadsAllTheThings
 + https://attackdefense.com/
 + https://vk9-sec.com/
++ https://techvomit.net/pentesting-notes-and-snippets/
 
 # 在线反编译器
 + [JAR String Editor](https://www.decompiler.com/jar-string-editor)
@@ -620,3 +621,8 @@ init:stop().  //退出Erlang Shell是使用init:stop函数完成的
 # 反病毒
 + https://krabsonsecurity.com/
 + https://asec.ahnlab.com/jp/26987/
+
+# Stager分阶段
++ https://github.com/BishopFox/sliver/wiki/Stagers
++ https://lowery.tech/building-a-custom-shellcode-stager-with-process-injection-to-bypass-windows-defender/
++ https://mrd0x.com/download-and-execute-sliver-stager/
