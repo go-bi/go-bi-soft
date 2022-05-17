@@ -31,6 +31,9 @@ ufw status
 + https://domainbigdata.com/
 + https://www.robtex.com/cidr/
 
+# shellcode
++ https://github.com/TheWover/donut
+
 # Tor Browser
 + https://www.torproject.org/download/
 + https://bridges.torproject.org/bridges
