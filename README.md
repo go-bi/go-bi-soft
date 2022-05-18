@@ -576,6 +576,9 @@ wget https://ftp.tu-chemnitz.de/pub/linux/dag/redhat/el7/en/x86_64/rpmforge/RPMS
   ```
   + https://s1gh.sh/discord-dll-hijacking-persistence/
   + https://0x191unauthorized.blogspot.com/2011/08/reverse-shell-through-dll-injection.html
+  + https://download.sysinternals.com/files/ProcessExplorer.zip
+  + https://download.sysinternals.com/files/ProcessMonitor.zip
+  + https://download.sysinternals.com/files/Autoruns.zip
 # mssql 2008 自定义dll提权
 ```
 ;开启mssql CLR功能
