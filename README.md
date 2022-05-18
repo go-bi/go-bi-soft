@@ -579,6 +579,7 @@ wget https://ftp.tu-chemnitz.de/pub/linux/dag/redhat/el7/en/x86_64/rpmforge/RPMS
   + https://download.sysinternals.com/files/ProcessExplorer.zip
   + https://download.sysinternals.com/files/ProcessMonitor.zip
   + https://download.sysinternals.com/files/Autoruns.zip
+  + https://www.nirsoft.net/utils/dll_export_viewer.html
 # mssql 2008 自定义dll提权
 ```
 ;开启mssql CLR功能
