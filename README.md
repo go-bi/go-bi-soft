@@ -565,6 +565,7 @@ wget https://ftp.tu-chemnitz.de/pub/linux/dag/redhat/el7/en/x86_64/rpmforge/RPMS
 + http://www.rohitab.com/discuss/forum/9-source-codes/
 + https://search.unprotect.it/
 + https://www.phrozen.io/
++ https://indetectables.net/viewforum.php?f=102
 
 # xss平台
 + https://xsshunter.com/
