@@ -31,6 +31,9 @@ ufw status
 + https://www.virustotal.com/gui/home/search
 + https://domainbigdata.com/
 + https://www.robtex.com/cidr/
+# 在线杀毒
++ https://antiscan.me/
++ https://www.virustotal.com/
 
 # 威客雇用
 + https://www.freelancer.is/
