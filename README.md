@@ -136,6 +136,8 @@ Visual Studio Professional 2022 TD244-P4NB7-YQ6XK-Y8MMM-YWV2J
 # .net 
 + https://dotnet.microsoft.com/zh-cn/download/visual-studio-sdks?utm_source=getdotnetsdk&utm_medium=referral
 
+# qt
++ https://pystyle.info/setup-qt-development-environment-on-windows/
 
 # gost(GO语言)实现的安全隧道
 ```
