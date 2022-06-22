@@ -143,6 +143,19 @@ Visual Studio Professional 2022 TD244-P4NB7-YQ6XK-Y8MMM-YWV2J
 # vm tools 安装失败补丁
 + https://www.catalog.update.microsoft.com/Search.aspx?q=kb4474419
 
+# xss平台
++ https://github.com/mandatoryprogrammer/xsshunter-express
++ https://github.com/mandatoryprogrammer/xsshunter
++ https://github.com/mandatoryprogrammer/CursedChrome
++ https://github.com/XShar/XssBot
++ https://github.com/kagurazakasanae/SuperXSS
++ https://github.com/tempbottle/xssPlatform
++ https://github.com/Yeuoly/FxxkXSS
++ https://github.com/ssl/ezXSS
++ https://github.com/LewisArdern/bXSS
++ https://github.com/kleiton0x00/XSScope
++ https://github.com/portcullislabs/xssshell-xsstunnel
+
 # gost(GO语言)实现的安全隧道
 ```
 ./gost -L=:1080	//作为标准HTTP/SOCKS5代理
