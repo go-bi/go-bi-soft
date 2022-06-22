@@ -140,6 +140,9 @@ Visual Studio Professional 2022 TD244-P4NB7-YQ6XK-Y8MMM-YWV2J
 + https://pystyle.info/setup-qt-development-environment-on-windows/
 + https://blog.csdn.net/jiaolu295/article/details/116116186
 
+# vm tools 安装失败补丁
++ https://www.catalog.update.microsoft.com/Search.aspx?q=kb4474419
+
 # gost(GO语言)实现的安全隧道
 ```
 ./gost -L=:1080	//作为标准HTTP/SOCKS5代理
