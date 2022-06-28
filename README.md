@@ -23,6 +23,9 @@ ufw status
 + https://www.shodan.io/
 + https://search.censys.io/
 + https://fofa.info/
++ https://www.criminalip.io/
++ https://www.onyphe.io/
++ https://viz.greynoise.io/
 + https://publicwww.com/
 + https://natlas.io/
 + https://www.qwant.com/
