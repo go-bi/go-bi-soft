@@ -38,6 +38,8 @@ ufw status
 + https://antiscan.me/
 + https://www.virustotal.com/
 + https://any.run/
+# 漏洞利用
++ https://sploitus.com/
 
 # 威客雇用
 + https://www.freelancer.is/
