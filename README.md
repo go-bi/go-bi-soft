@@ -34,6 +34,7 @@ ufw status
 # 在线杀毒
 + https://antiscan.me/
 + https://www.virustotal.com/
++ https://any.run/
 
 # 威客雇用
 + https://www.freelancer.is/
