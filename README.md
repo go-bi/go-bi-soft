@@ -16,6 +16,8 @@ ufw status
 + https://localxpose.io/
 + http://localhost.run/
 + https://rport.io/
+# Vultr镜像
++ https://write.corbpie.com/installing-windows-10-pro-iso-with-virtio-on-vultr/
 
 # 搜索引擎
 + https://www.greynoise.io/
@@ -140,6 +142,9 @@ Visual Studio Professional 2017 KBJFW-NXHK6-W4WJM-CRMQB-G3CDH
 Visual Studio Professional 2019 NYWVH-HT4XC-R2WYW-9Y3CM-X4V3Y
 Visual Studio Professional 2022 TD244-P4NB7-YQ6XK-Y8MMM-YWV2J
 ```
+# vs 下载
++ https://www.kunal-chowdhury.com/2015/07/download-visualstudio-2015.html
+
 # .net 
 + https://dotnet.microsoft.com/zh-cn/download/visual-studio-sdks?utm_source=getdotnetsdk&utm_medium=referral
 
