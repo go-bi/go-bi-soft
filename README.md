@@ -66,6 +66,7 @@ ufw status
 + https://www.kahusecurity.com/
 
 # 反弹shell
++ https://reverse-shell.sh/
 + https://www.revshells.com/
 
 # OS提权
