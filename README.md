@@ -65,6 +65,9 @@ ufw status
 + https://nssm.cc/download
 + https://www.kahusecurity.com/
 + https://www.colasoft.com.cn/
+  - 百度网盘下载地址
+    https://pan.baidu.com/share/init?surl=NtudvgaGhNa0mWtfkoqCOg
+    提取码：SA08
 
 # 反弹shell
 + https://reverse-shell.sh/
