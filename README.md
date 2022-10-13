@@ -64,6 +64,7 @@ ufw status
 + https://breakingsecurity.net/
 + https://nssm.cc/download
 + https://www.kahusecurity.com/
++ https://www.colasoft.com.cn/
 
 # 反弹shell
 + https://reverse-shell.sh/
