@@ -1223,6 +1223,7 @@ wget https://ftp.tu-chemnitz.de/pub/linux/dag/redhat/el7/en/x86_64/rpmforge/RPMS
 + https://search.unprotect.it/
 + https://www.phrozen.io/
 + https://indetectables.net/viewforum.php?f=102
++ https://payload.cafe/2022/10/02/havoc-c2-intro-inline-csharp-compilation-within-powershell/
 
 # xss平台
 + https://xsshunter.com/
