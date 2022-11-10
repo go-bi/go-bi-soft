@@ -1233,6 +1233,7 @@ wget https://ftp.tu-chemnitz.de/pub/linux/dag/redhat/el7/en/x86_64/rpmforge/RPMS
 + https://github.com/MicrosoftArchive/redis/releases
   + [Another Redis DeskTop Manage](https://github.com/qishibo/AnotherRedisDesktopManager/releases) 
   + https://github.com/MicrosoftArchive/redis/releases
+  + https://infosecwriteups.com/exploiting-redis-through-ssrf-attack-be625682461b
 
   dll劫持
   ```
