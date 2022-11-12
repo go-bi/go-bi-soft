@@ -99,6 +99,9 @@ ufw status
 + https://www.win-rar.com/fileadmin/winrar-versions/sc/sc20220317/rrlb/winrar-x64-611sc.exe
 + https://www.win-rar.com/fileadmin/winrar-versions/sc/sc20220317/rrlb/winrar-x32-611sc.exe
 
+# java JDK 下载
++ https://www.oracle.com/java/technologies/downloads/archive/
+
 # 解决方案 (.sln) 文件
 ## 文件头
 .sln 文件的标头如下所示：
