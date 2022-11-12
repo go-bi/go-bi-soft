@@ -101,6 +101,8 @@ ufw status
 
 # java JDK 下载
 + https://www.oracle.com/java/technologies/downloads/archive/
+  - 账号：1985479344@qq.com
+  - 密码：Oracle123
 
 # 解决方案 (.sln) 文件
 ## 文件头
