@@ -1199,6 +1199,7 @@ wget https://ftp.tu-chemnitz.de/pub/linux/dag/redhat/el7/en/x86_64/rpmforge/RPMS
 + [apk-mitm(自动修改apk)](https://github.com/shroudedcode/apk-mitm)
 
 # 参考链接
++ https://www.freebuf.com/articles/system/347725.html
 + https://medium.com/globant/testing-ssl-pinning-in-a-mobile-application-2dcac9ab3d0c
 + https://www.hackingarticles.in/android-hooking-and-sslpinning-using-objection-framework/
 + https://github.com/httptoolkit/android-ssl-pinning-demo
