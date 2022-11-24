@@ -103,6 +103,12 @@ ufw status
 + https://www.oracle.com/java/technologies/downloads/archive/
   - 账号：1985479344@qq.com
   - 密码：Oracle123
+# jdk版本查看
++ https://javaalmanac.io/bytecode/versions/
+```
+javap -verbose Sample.class | grep major  //Linux、MacOS
+javap -verbose Sample.class | findstr major //Windows
+```
 
 # 解决方案 (.sln) 文件
 ## 文件头
