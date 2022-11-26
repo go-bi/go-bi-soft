@@ -100,6 +100,7 @@ ufw status
 + https://www.win-rar.com/fileadmin/winrar-versions/sc/sc20220317/rrlb/winrar-x32-611sc.exe
 
 # java JDK 下载
++ https://www.oracle.com/java/technologies/downloads/#java8
 + https://www.oracle.com/java/technologies/downloads/archive/
   - 账号：1985479344@qq.com
   - 密码：Oracle123
@@ -109,6 +110,9 @@ ufw status
 javap -verbose Sample.class | grep major  //Linux、MacOS
 javap -verbose Sample.class | findstr major //Windows
 ```
+# jdk环境变量
++ 点击【系统变量】下面的【新建】按钮，然后直接在变量名输入`JAVA_HOME`,变量值为JAVA JDK的安装目录
++ 然后在双击系统变量Path，添加JAVA的安装bin目录进去。点击【新建】，输入`%JAVA_HOME%\bin`
 
 # 解决方案 (.sln) 文件
 ## 文件头
