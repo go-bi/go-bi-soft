@@ -362,6 +362,11 @@ tcpdump -i any -s 0 -w tcpdump.pcap	//当机器有多个网卡，不确定流量
 tcpdump -r <input_pcap> -w <output_pcap> -C <file_size>	//input_pcap是您要拆分的文件的名称，output_pcap是输出，而<file_size>是拆分文件的近似大小以兆字节为单位。
 tcpdump -r input_packet_capture.pcap -w output_packet_capture.pcap -C 25	//将文件拆分为约25mb的块
 ```
+## pcap分析
++ https://apackets.com/
++ https://www.netresec.com/?page=NetworkMiner
++ https://www.colasoft.com.cn/
++ https://www.wireshark.org/
 ## Linux 系统
 
 ### linux一条命令添加一个root级别账户并设置密码
