@@ -39,7 +39,11 @@ ufw status
 # 在线杀毒
 + https://antiscan.me/
 + https://www.virustotal.com/
+# 恶意软件分析沙盒
 + https://any.run/
++ https://www.joesandbox.com/
++ https://www.hybrid-analysis.com/
+
 # 漏洞利用
 + https://sploitus.com/
 
