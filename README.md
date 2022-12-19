@@ -72,6 +72,7 @@ ufw status
   - 百度网盘下载地址
     https://pan.baidu.com/share/init?surl=NtudvgaGhNa0mWtfkoqCOg
     提取码：SA08
++ https://download.xshell.com/27397819/Xmanager-7.0.0112.exe
 
 # 反弹shell
 + https://reverse-shell.sh/
