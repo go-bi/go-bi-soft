@@ -108,8 +108,8 @@ ufw status
 + https://www.win-rar.com/fileadmin/winrar-versions/sc/sc20220317/rrlb/winrar-x32-611sc.exe
 
 # 浏览器扩展插件安装目录
-+ Chrome `%APPDATA%/Local/Google/Chrome/User Data/Default/Extensions`
-+ Edge `%APPDATA%/Local/Microsoft/Edge/User Data/Default/Extensions`
++ Chrome `%APPDATA%/../Local/Google/Chrome/User Data/Default/Extensions`
++ Edge `%APPDATA%/../Local/Microsoft/Edge/User Data/Default/Extensions`
 
 # BurpSuiteProl历史版本
 + https://portswigger.net/burp/releases/archive
