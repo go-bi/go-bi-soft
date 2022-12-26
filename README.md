@@ -79,6 +79,29 @@ ufw status
 # 模拟器
 + https://mac.getutm.app/
 + https://github.com/ninxsoft/Mist
++ https://github.com/ninxsoft/mist-cli
+```
+#列出适用于Apple Silicon Mac的所有MacOS固件：
+mist list firmware
+
+#列出所有可用于英特尔Mac的MacOS安装程序，
+#包括MacOS Big Sur及更高版本的通用安装程序：
+mist list installer
+
+#下载最新MacOS Ventura固件。
+#Apple Silicon Mac，自定义名称：
+mist download firmware "macOS Ventura" --firmware-name "Install-%NAME%-%VERSION%-%BUILD%.ipsw"
+
+#下载用于英特尔Mac的特定MacOS安装程序版本，
+#包括MacOS Big Sur及更高版本的通用安装程序，
+#并使用自定义名称生成磁盘镜像：
+mist download installer "13.0.1" image --image-name "Install-%NAME%-%VERSION%-%BUILD%.dmg"
+
+#下载用于英特尔Mac的最新MacOS Ventura安装程序，
+#包括MacOS Big Sur及更高版本的通用安装程序，
+#可引导磁盘镜像：
+mist download installer "13.0.1" iso --iso-name "Install-%NAME%-%VERSION%-%BUILD%.iso"
+```
 
 # 反弹shell
 + https://reverse-shell.sh/
