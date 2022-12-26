@@ -76,6 +76,9 @@ ufw status
 
 # 在线翻译
 + https://www.deepl.com/translator#en/zh/
+# 模拟器
++ https://mac.getutm.app/
++ https://github.com/ninxsoft/Mist
 
 # 反弹shell
 + https://reverse-shell.sh/
