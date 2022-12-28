@@ -80,6 +80,8 @@ ufw status
 + https://mac.getutm.app/
 + https://github.com/ninxsoft/Mist
 + https://github.com/ninxsoft/mist-cli
++ https://communities.vmware.com/t5/VMware-Fusion-Discussions/macOS-13-Ventura-VM-Intel/td-p/2913104
+
 ```
 #列出适用于Apple Silicon Mac的所有MacOS固件：
 mist list firmware
