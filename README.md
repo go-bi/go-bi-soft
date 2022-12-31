@@ -76,6 +76,7 @@ ufw status
 
 # 自定义linux发行版
 + https://xubuntu.org/news/introducing-xubuntu-core/
++ https://unit193.net/xubuntu/core/
 
 # 在线翻译
 + https://www.deepl.com/translator#en/zh/
