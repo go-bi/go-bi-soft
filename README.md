@@ -74,6 +74,9 @@ ufw status
     提取码：SA08
 + https://download.xshell.com/27397819/Xmanager-7.0.0112.exe
 
+# 自定义linux发行版
++ https://xubuntu.org/news/introducing-xubuntu-core/
+
 # 在线翻译
 + https://www.deepl.com/translator#en/zh/
 # 模拟器
