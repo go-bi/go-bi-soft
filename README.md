@@ -78,6 +78,20 @@ ufw status
 + https://xubuntu.org/news/introducing-xubuntu-core/
 + https://unit193.net/xubuntu/core/
 
+# 杂项
++ https://support.apple.com/zh-cn/HT211814
++ https://sysin.org/blog/macos-installer-damaged/
++ https://sysin.org/blog/how-to-install-macos/
++ https://portswigger.net/burp/releases/professional-community-2021-12
++ https://macoshome.com/macos/17094.html
++ https://kb.vmware.com/s/article/83098
++ https://www.pethuraj.com/blog/use-burpsuite-like-a-pro-part-1/
++ https://www.ceos3c.com/security/burp-suite-tutorial-made-easy/#:~:text=Burp%20Suite%20Tutorial%20%E2%80%93%20Get%20started%20with%20Burp,term%20...%208%20Using%20the%20Spider%20...%20%E6%9B%B4%E5%A4%9A%E9%A1%B9%E7%9B%AE
++ https://www.arridae.com/blogs/setting-up-an-android-pt-environment.php
++ https://www.pluralsight.com/courses/web-application-penetration-testing-with-burp-suite
++ https://tryhackme.com/module/learn-burp-suite
+
+
 # 在线翻译
 + https://www.deepl.com/translator#en/zh/
 # 模拟器
