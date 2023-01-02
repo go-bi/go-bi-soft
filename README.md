@@ -77,6 +77,8 @@ ufw status
 # 自定义linux发行版
 + https://xubuntu.org/news/introducing-xubuntu-core/
 + https://unit193.net/xubuntu/core/
++ https://help.zorin.com/docs/hardware/activate-amd-radeon-drivers/
++ https://www.slax.org/
 
 # 杂项
 + https://support.apple.com/zh-cn/HT211814
