@@ -133,6 +133,9 @@ mist download installer "13.0.1" iso --iso-name "Install-%NAME%-%VERSION%-%BUILD
 + https://www.hackingarticles.in/category/red-teaming/page/2/
 + https://cyber-security.tk/exploit/Linux-Privilege-Escalation/
 + https://cyber-security.tk/exploit/Windows-Privilege-Escalation/
++ https://juggernaut-sec.com/category/windows-privilege-escalation/
++ https://juggernaut-sec.com/category/linux-privilege-escalation/
++ https://book.hacktricks.xyz/linux-hardening/privilege-escalation
 
 # 文件传输
 + https://transfer.sh/
