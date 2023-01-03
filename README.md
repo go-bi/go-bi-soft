@@ -80,6 +80,8 @@ ufw status
 + https://www.slax.org/
 + https://www.linux-live.org/
 + https://help.zorin.com/docs/hardware/activate-amd-radeon-drivers/
++ https://www.wps.com/office/linux/
++ https://www.ubuntukylin.com/applications/
 
 
 # 杂项
