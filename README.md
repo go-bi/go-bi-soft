@@ -83,6 +83,7 @@ ufw status
 + https://www.wps.com/office/linux/
 + https://www.cnblogs.com/guochaoxxl/p/11619260.html
 + https://www.ubuntukylin.com/applications/
++ https://www.slax.org/blog/27433-Releasing-Slax-15-0-based-on-Slackware-again-after-9-years-and-11-4-based-on-Debian.html
 
 
 # 杂项
