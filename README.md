@@ -87,6 +87,7 @@ ufw status
 + https://www.dwarmstrong.org/minimal-debian/
 + https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-11.6.0-amd64-netinst.iso
 + https://www.gooneyryan.com/archives/828
++ http://xlunch.org/
 
 
 # 杂项
