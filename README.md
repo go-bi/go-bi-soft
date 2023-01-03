@@ -89,6 +89,7 @@ ufw status
 + https://www.gooneyryan.com/archives/828
 + http://xlunch.org/
 + https://wiki.debian.org/FluxBox
++ https://itnext.io/how-to-create-a-custom-ubuntu-live-from-scratch-dd3b3f213f81
 
 
 # 杂项
