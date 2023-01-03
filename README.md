@@ -81,6 +81,7 @@ ufw status
 + https://www.linux-live.org/
 + https://help.zorin.com/docs/hardware/activate-amd-radeon-drivers/
 + https://www.wps.com/office/linux/
++ https://www.cnblogs.com/guochaoxxl/p/11619260.html
 + https://www.ubuntukylin.com/applications/
 
 
