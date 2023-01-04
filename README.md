@@ -91,6 +91,10 @@ ufw status
 + https://wiki.debian.org/FluxBox
 + https://itnext.io/how-to-create-a-custom-ubuntu-live-from-scratch-dd3b3f213f81
 + https://groups.google.com/forum/#!forum/slax-users
++ https://blog.csdn.net/weixin_44071721/article/details/117035899
++ https://www.jianshu.com/p/9d44e3b98930
++ https://www.debian.org/doc/manuals/debian-reference/
++ https://blog.csdn.net/seaship/article/details/86286572
 
 
 # 杂项
