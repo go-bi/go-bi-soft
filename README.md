@@ -75,6 +75,7 @@ ufw status
 + https://download.xshell.com/27397819/Xmanager-7.0.0112.exe
 
 # 自定义linux发行版
++ https://www.ventoy.net/cn/isolist.html
 + https://xubuntu.org/news/introducing-xubuntu-core/
 + https://unit193.net/xubuntu/core/
 + https://www.slax.org/
