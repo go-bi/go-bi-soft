@@ -96,6 +96,7 @@ ufw status
 + https://www.jianshu.com/p/9d44e3b98930
 + https://www.debian.org/doc/manuals/debian-reference/
 + https://blog.csdn.net/seaship/article/details/86286572
++ https://medium.com/source-words/how-to-manually-install-update-and-uninstall-fonts-on-linux-a8d09a3853b0
 
 
 # 杂项
