@@ -90,6 +90,7 @@ ufw status
 + http://xlunch.org/
 + https://wiki.debian.org/FluxBox
 + https://itnext.io/how-to-create-a-custom-ubuntu-live-from-scratch-dd3b3f213f81
++ https://groups.google.com/forum/#!forum/slax-users
 
 
 # 杂项
