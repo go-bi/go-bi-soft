@@ -97,6 +97,12 @@ ufw status
 + https://www.debian.org/doc/manuals/debian-reference/
 + https://blog.csdn.net/seaship/article/details/86286572
 + https://medium.com/source-words/how-to-manually-install-update-and-uninstall-fonts-on-linux-a8d09a3853b0
++ https://groups.google.com/g/slax-users/c/ysmA6JNH-4U
++ https://shixiongfei.com/debian-chinese.html
++ https://www.slax.org/blog/19525-International-support-for-Slax.html
++ https://silentming.net/blog/2015/11/16/add-chinese-in-english-debian/
++ https://shixiongfei.com/debian-chinese.html
+
 
 
 # 杂项
