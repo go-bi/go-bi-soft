@@ -102,6 +102,8 @@ ufw status
 + https://www.slax.org/blog/19525-International-support-for-Slax.html
 + https://silentming.net/blog/2015/11/16/add-chinese-in-english-debian/
 + https://shixiongfei.com/debian-chinese.html
++ https://sysdl132.github.io/blogcc/2021/03/29/livecd.html
++ https://github.com/mvallim/live-custom-ubuntu-from-scratch
 
 
 
