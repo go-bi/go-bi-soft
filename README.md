@@ -196,6 +196,8 @@ mist download installer "13.0.1" iso --iso-name "Install-%NAME%-%VERSION%-%BUILD
 # java JDK 下载
 + https://www.oracle.com/java/technologies/downloads/#java8
 + https://www.oracle.com/java/technologies/downloads/archive/
++ https://www.oracle.com/java/technologies/javase/javase8u211-later-archive-downloads.html
++ https://www.oracle.com/java/technologies/javase/jdk11-archive-downloads.html
   - 账号：1985479344@qq.com
   - 密码：Oracle123
 # jdk版本查看
