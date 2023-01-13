@@ -68,6 +68,7 @@ ufw status
 + https://breakingsecurity.net/
 + https://nssm.cc/download
 + https://www.kahusecurity.com/
++ https://forums.mydigitallife.net/
 + https://www.colasoft.com.cn/
   - 百度网盘下载地址
     https://pan.baidu.com/share/init?surl=NtudvgaGhNa0mWtfkoqCOg
