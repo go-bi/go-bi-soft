@@ -1326,6 +1326,7 @@ wget https://ftp.tu-chemnitz.de/pub/linux/dag/redhat/el7/en/x86_64/rpmforge/RPMS
 + https://vk9-sec.com/
 + https://techvomit.net/pentesting-notes-and-snippets/
 + https://book.hacktricks.xyz/welcome/readme
++ https://haxez.org/
 
 # 在线反编译器
 + [JAR String Editor](https://www.decompiler.com/jar-string-editor)
