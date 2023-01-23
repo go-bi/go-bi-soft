@@ -124,6 +124,9 @@ ufw status
 
 # 在线翻译
 + https://www.deepl.com/translator#en/zh/
+# PDF教程下载
++ https://www.pdfdrive.com/
+
 # 模拟器
 + https://mac.getutm.app/
 + https://github.com/ninxsoft/Mist
