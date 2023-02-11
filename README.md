@@ -170,6 +170,9 @@ mist download installer "13.0.1" iso --iso-name "Install-%NAME%-%VERSION%-%BUILD
 + https://juggernaut-sec.com/category/linux-privilege-escalation/
 + https://book.hacktricks.xyz/linux-hardening/privilege-escalation
 
+# ssr代理
++ https://github.com/2dust/v2rayN/releases/
+
 # 文件传输
 + https://transfer.sh/
 
