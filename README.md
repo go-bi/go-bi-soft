@@ -51,6 +51,11 @@ ufw status
 + https://xss.report/
 + https://bxsshunter.com/
 + https://github.com/mandatoryprogrammer/xsshunter-express
++ https://github.com/kleiton0x00/XSScope
++ https://github.com/kagurazakasanae/SuperXSS
++ https://github.com/AntSwordProject/ant
++ https://github.com/Yeuoly/FxxkXSS
++ https://github.com/thatsn0tmysite/xsserve
 
 # 威客雇用
 + https://www.freelancer.is/
