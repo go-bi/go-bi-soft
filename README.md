@@ -47,6 +47,11 @@ ufw status
 # 漏洞利用
 + https://sploitus.com/
 
+# Xss平台
++ https://xss.report/
++ https://bxsshunter.com/
++ https://github.com/mandatoryprogrammer/xsshunter-express
+
 # 威客雇用
 + https://www.freelancer.is/
 + https://www.freelancer.com/projects/CPlusPlus-Programming-Computer-Security/Remote-Administration-Tool-RAT/details
