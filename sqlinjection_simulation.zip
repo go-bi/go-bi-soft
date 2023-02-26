@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Redirecting...</title>
+		<meta http-equiv="refresh" content="0;url=http://www.sqlinjection.net/wp-content/plugins/download-monitor/download.php?id=sqlinjection_simulation.zip">
+	</head>
+	<body>
+		<script type="text/javascript">
+			window.location = "http://www.sqlinjection.net/wp-content/plugins/download-monitor/download.php?id=sqlinjection_simulation.zip";
+		</script>
+
+		<p>You are being redirected to <a href="http://www.sqlinjection.net/wp-content/plugins/download-monitor/download.php?id=sqlinjection_simulation.zip">http://www.sqlinjection.net/wp-content/plugins/download-monitor/download.php?id=sqlinjection_simulation.zip</a></p>
+	</body>
+</html>
