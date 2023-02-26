@@ -1505,6 +1505,13 @@ SELECT * from mysql.user where user = substring_index(user(), '@', 1) ;	//查询
 SELECT id,name,password,secret_key from admin_db.user_xxxx where is_delete = 0;	//指定条件查询数据
 SELECT table_schema,COUNT(table_name) FROM information_schema.TABLES GROUP BY table_schema	//统计所有库下的表个数
 SELECT table_schema,GROUP_CONCAT(table_name) FROM  information_schema.tables GROUP BY table_schema;	//查询整个数据库中所有库和所对应的表信息
+
+SELECT SCHEMA_NAME FROM INFORMATION_SCHEMA.SCHEMATA	获取所有数据库名
+SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='sqlinjection'	获取指定数据库表名
+SELECT TABLE_NAME,TABLE_ROWS FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='sqlinjection'	获取指定数据库表名和表统计
+SELECT TABLE_NAME,COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEMA='sqlinjection'	获取指定数据库表名和字段名
+SELECT username,password FROM sqlinjection.members	获取指定数据库、表、字段信息
+SELECT username,password FROM sqlinjection.members LIMIT 0,1	获取指定数据库、表、字段信息,限制查询条数
 ```
 ### sqlmap mysql数据库--sql-query查询语句
 ```
