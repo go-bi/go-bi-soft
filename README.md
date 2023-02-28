@@ -20,6 +20,7 @@ ufw status
 + https://write.corbpie.com/installing-windows-10-pro-iso-with-virtio-on-vultr/
 
 # 搜索引擎
++ https://crt.sh/
 + https://www.greynoise.io/
 + https://www.zoomeye.org/
 + https://www.shodan.io/
