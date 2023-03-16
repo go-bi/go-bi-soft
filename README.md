@@ -21,12 +21,13 @@ ufw status
 
 # 搜索引擎
 + https://crt.sh/
-+ https://www.greynoise.io/
++ https://otx.alienvault.com/
 + https://www.zoomeye.org/
 + https://www.shodan.io/
 + https://beta.shodan.io/search/filters
 + https://search.censys.io/
 + https://fofa.info/
++ https://www.greynoise.io/
 + https://www.criminalip.io/
 + https://www.onyphe.io/
 + https://viz.greynoise.io/
