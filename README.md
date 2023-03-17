@@ -133,7 +133,7 @@ ufw status
 + https://www.arridae.com/blogs/setting-up-an-android-pt-environment.php
 + https://www.pluralsight.com/courses/web-application-penetration-testing-with-burp-suite
 + https://tryhackme.com/module/learn-burp-suite
-
++ https://r0yanx.com/2022/05/10/%E5%9F%BA%E4%BA%8E%E6%B5%8F%E8%A7%88%E5%99%A8%E7%9A%84%E5%8F%A3%E4%BB%A4%E6%9A%B4%E7%A0%B4/
 
 # 在线翻译
 + https://www.deepl.com/translator#en/zh/
