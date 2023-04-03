@@ -64,6 +64,7 @@ ufw status
 + https://www.freelancer.is/
 + https://www.freelancer.com/projects/CPlusPlus-Programming-Computer-Security/Remote-Administration-Tool-RAT/details
 + https://www.indetectables.net/ 
++ https://www.enelpc.com/p/larrylurexrat.html
 
 # shellcode
 + https://github.com/TheWover/donut
