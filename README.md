@@ -136,6 +136,116 @@ ufw status
 + https://tryhackme.com/module/learn-burp-suite
 + https://r0yanx.com/2022/05/10/%E5%9F%BA%E4%BA%8E%E6%B5%8F%E8%A7%88%E5%99%A8%E7%9A%84%E5%8F%A3%E4%BB%A4%E6%9A%B4%E7%A0%B4/
 
+## VMware虚拟机设置
+### VMware专业版下载
+
++ https://www.vmware.com/cn/products/workstation-pro/workstation-pro-evaluation.html
++ https://www.vmware.com/cn/products/fusion/fusion-evaluation.html
++ https://www.vmware.com/products/workstation-player/workstation-player-evaluation.html
+
+### VMware Fusion 11.x Pro激活码
+```
+XKZYV-PK9CC-A1Y0X-K5HZL-Y65ZV
+7HYY8-Z8WWY-F1MAN-ECKNY-LUXYX
+ZTVXW-VRAG9-D1WUR-XLQCT-VV5XX
+G0ZQR-GRGYE-G1V8Z-AT9E0-6KNGV
+RHZP8-V2QKE-Z1ZPQ-QFUET-Q7QZZ
+```
+### VMware Player 15激活码
+
+```
+FY102-4UF13-088AP-KWWGZ-WLKW2
+ZV30K-66Z8K-M84VY-0DMZG-NG88D
+GG352-DMD01-481TQ-NEQQC-QGK96
+ZG70H-80F9L-489QP-ZYPQE-X20Y2
+AZ3EH-6PD8N-08D1Q-3DWZZ-XPHUA
+VY780-A7XE6-0806P-LWM7T-ZPUV6
+```
+### VMware Workstation Pro 15.x永久激活密钥激活码
+```
+YZ718-4REEQ-08DHQ-JNYQC-ZQRD0
+```
+### VMware Workstation Pro 16.x永久激活密钥激活码
+```
+ZF3R0-FHED2-M80TY-8QYGC-NPKYF
+YF390-0HF8P-M81RQ-2DXQE-M2UT6
+ZF71R-DMX85-08DQY-8YMNC-PPHV8
+```
+### Linux主流发行版的软件源
+
++ http://mirrors.ustc.edu.cn 是 Debian, Ubuntu, Fedora, Archlinux, CentOS 等多个发行版的官方源和 Debian 在中国的官方镜像。
++ https://mirrors.tuna.tsinghua.edu.cn/ 是 Debian, Ubuntu, Fedora, Archlinux, CentOS 等多个发行版的官方源和 Debian 在中国的官方镜像。
++ http://old.kali.org/ kali老版本官方镜像
++ https://cdimage.kali.org/kali-images/ kali官方镜像
++ http://isoredirect.centos.org/altarch/ CentOS官方镜像
++ https://archive.kernel.org/centos-vault/ CentOS官方镜像
+https://vault.centos.org/ CentOS官方镜像
++ https://cdimage.debian.org/mirror/cdimage/archive/ Debian官方镜像
++ https://releases.ubuntu.com/ Ubuntu官方镜像
++ https://www.freebsd.org/where.html FreeBSD官方镜像
++ https://developers.redhat.com/products/rhel/download RedHat官方镜像,需要登录后下载
++ http://ba.mirror.garr.it/mirrors/backbox/ Bakbox官方镜像
++ https://backbox.oversecurity.net/downloads/ Bakbox官方镜像
+
+### kali开启SSH服务，允许root登陆
+```restart-vm-tools.sh
+systemctl enable ssh.service	//开启SSH服务开机启动
+```
+`nano /etc/ssh/sshd_config`允许root登陆
+```
+#PermitRootLogin prohibit-password
+PermitRootLogin yes
+#PasswordAuthentication yes
+PasswordAuthentication yes
+```
+### kali 重启restart-vm-tools.sh
+```restart-vm-tools.sh
+#!/bin/bash
+systemctl stop run-vmblock\\x2dfuse.mount
+killall -q -w vmtoolsd
+
+systemctl start run-vmblock\\x2dfuse.mount
+systemctl enable run-vmblock\\x2dfuse.mount
+
+vmware-user-suid-wrapper vmtoolsd -n vmusr 2>/dev/null
+vmtoolsd -b /var/run/vmroot 2>/dev/null
+```
+### kali 挂载共享目录mount-shared-folders.sh
+```mount-shared-folders.sh
+#!/bin/bash
+
+vmware-hgfsclient | while read folder; do
+  echo "[i] Mounting ${folder}   (/mnt/hgfs/${folder})"
+  mkdir -p "/mnt/hgfs/${folder}"
+  umount -f "/mnt/hgfs/${folder}" 2>/dev/null
+  vmhgfs-fuse -o allow_other -o auto_unmount ".host:/${folder}" "/mnt/hgfs/${folder}"
+done
+
+sleep 2s
+```
+### kali设置固定ip
+1.首先把kali虚拟机的**网络适配器**更改为**桥接模式**直连物理网络。<br>
+2.查看自己主机的（是自己真实电脑的不是虚拟机）ip地址，网关，网段。<br>
+3.修改`nano /etc/network/interfaces`文件，添加如下内容
+```
+auto eth0	//自动启动eth0网卡
+iface eth0 inet static	//静态获取IP
+address x.x.x.x	//固定ip地址，根据实际情况填写
+netmask x.x.x.x	//子网掩码，根据实际情况填写
+gateway x.x.x.x	//网关，根据实际情况填写
+```
+4.修改`nano /etc/resolv.conf`文件添加dns
+```
+nameserver 114.114.114.114
+nameserver 8.8.8.8
+```
+5.重启系统或`/etc/init.d/networking restart`或`systemctl restart networking.service`重启网络服务
+### kail清除回收站
+由于Kail Linux没有回收站图标。可以使用命令行方式清理回收站。
+```
+sudo rm -rf ~/.local/share/Trash/*
+```
+
 # 在线翻译
 + https://www.deepl.com/translator#en/zh/
 # PDF教程下载
