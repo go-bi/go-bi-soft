@@ -334,6 +334,13 @@ Visual Studio Professional 2022 TD244-P4NB7-YQ6XK-Y8MMM-YWV2J
 ./gost -L=admin:123456@:1080	//设置代理认证信息
 ./gost -L=http2://:443 -L=socks5://:1080 -L=ss://aes-128-cfb:123456@:8338	//多端口监听
 nohup ./gost -L=:1080 > /dev/null 2>&1 &	//后台运行不记录日志
+nssm.exe install
+Path：选择gost.exe
+Statup directory:自动添加路径地址
+Arguments：参数设置-L=:1080
+Service name：设置gost 点击Install service
+nssm.exe start gost
+nssm.exe edit gost
 ```
 ### ngrok指定内网ip端口
 ```
