@@ -230,6 +230,12 @@ javap -verbose Sample.class | findstr major //Windows
 + 点击【系统变量】下面的【新建】按钮，然后直接在变量名输入`JAVA_HOME`,变量值为JAVA JDK的安装目录
 + 然后在双击系统变量Path，添加JAVA的安装bin目录进去。点击【新建】，输入`%JAVA_HOME%\bin`
 
+# python和pip特定版本
+python2.7.9默认自带pip版
+```
+https://www.python.org/ftp/python/2.7.9/python-2.7.9.amd64.msi
+https://www.python.org/ftp/python/3.10.7/python-3.10.7-amd64.exe
+```
 ## emeditor常用正则表达式
 
 ```
