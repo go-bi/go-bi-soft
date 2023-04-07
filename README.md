@@ -245,6 +245,16 @@ nameserver 8.8.8.8
 ```
 sudo rm -rf ~/.local/share/Trash/*
 ```
+### kali设置默认jdk8
+```
+https://www.oracle.com/in/java/technologies/downloads/ // 下载jdk8
+sudo mkdir -p /usr/lib/jvm  //为 JDK 创建一个目录
+sudo tar zxvf jdk- version -linux-x64.tar.gz -C /usr/lib/jvm  //提取 tarball 并安装 JDK
+sudo update-alternatives --install "/usr/bin/java" "java" "/usr/lib/jvm/jdk1.8.0_ version/bin/java" 1  //告诉系统有可用的新 Java 版本
+注意：如果从手动删除的先前版本更新，请执行上述命令两次，因为第一次会收到错误消息。
+sudo update-alternatives --set java /usr/lib/jvm/jdk1.8.0_version/bin/java  //将新JDK设置为默认值
+sudo update-alternatives --config java  //jdk多版本切换
+```
 
 # 在线翻译
 + https://www.deepl.com/translator#en/zh/
