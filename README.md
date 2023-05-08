@@ -50,6 +50,9 @@ ufw status
 # 漏洞利用
 + https://sploitus.com/
 
+# 漏洞wiki
++ https://wiki.bylibrary.cn/
+
 # Xss平台
 + https://xss.report/
 + https://bxsshunter.com/
