@@ -18,7 +18,9 @@ ufw status
 + https://rport.io/
 # Vultr镜像
 + https://write.corbpie.com/installing-windows-10-pro-iso-with-virtio-on-vultr/
-
+# 音乐下载
++ https://soundcloud.com/
+  - https://chrome.google.com/webstore/detail/soundcloud-to-mp3-soundcl/bglggfjiagajfmchbcjolbggghckfhgm
 # 搜索引擎
 + https://crt.sh/
 + https://otx.alienvault.com/
