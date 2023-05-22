@@ -148,6 +148,8 @@ ufw status
 + https://www.vmware.com/cn/products/workstation-pro/workstation-pro-evaluation.html
 + https://www.vmware.com/cn/products/fusion/fusion-evaluation.html
 + https://www.vmware.com/products/workstation-player/workstation-player-evaluation.html
++ https://docs.vmware.com/cn/VMware-Workstation-Pro/index.html
++ https://download3.vmware.com/software/WKST-1625-WIN/VMware-workstation-full-16.2.5-20904516.exe
 
 ### VMware Fusion 11.x Pro激活码
 ```
