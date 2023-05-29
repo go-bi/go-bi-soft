@@ -1848,3 +1848,13 @@ db.mysqlUrl
 db.password
 db.username
 ```
+
+# 基于浏览器的口令暴破与图形验证码识别 
++ https://github.com/microsoft/playwright-python
++ https://github.com/sml2h3/ddddocr
++ https://r0yanx.com/2022/05/10/%E5%9F%BA%E4%BA%8E%E6%B5%8F%E8%A7%88%E5%99%A8%E7%9A%84%E5%8F%A3%E4%BB%A4%E6%9A%B4%E7%A0%B4/
++ http://ngc660.cn/2022/11/%E5%88%A9%E7%94%A8selenium%E7%BB%95%E8%BF%87%E5%89%8D%E7%AB%AFjs%E5%8A%A0%E5%AF%86%E5%8F%8A%E9%AA%8C%E8%AF%81%E7%A0%81%E7%88%86%E7%A0%B4/
++ https://blog.csdn.net/weixin_44688529/article/details/129581697
++ https://www.11bsn.com/details/burpsuite-java-captchakiller-python-dddoc-identify-orcode/
++ https://mdnice.com/writing/5a6d8640e0f348c68cd479a093a068f8
++ https://www.jianshu.com/p/b85f7d4f8c49
