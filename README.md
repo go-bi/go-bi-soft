@@ -55,6 +55,7 @@ ufw status
 # 漏洞wiki
 + https://wiki.bylibrary.cn/
 + https://forum.ywhack.com/bountytips.php
++ https://exploit-notes.hdks.org/
 
 # Xss平台
 + https://xss.report/
