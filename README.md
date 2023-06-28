@@ -57,6 +57,8 @@ ufw status
 + https://book.hacktricks.xyz/
 + https://ppn.snovvcrash.rocks/
 + https://kashz.gitbook.io/kashz-jewels/
++ https://ed4m4s.blog/
++ https://docs.h4rithd.com/
 + https://wiki.bylibrary.cn/
 + https://forum.ywhack.com/bountytips.php
 + https://exploit-notes.hdks.org/
