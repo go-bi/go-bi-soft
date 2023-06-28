@@ -52,10 +52,18 @@ ufw status
 # 漏洞利用
 + https://sploitus.com/
 
+
 # 漏洞wiki
++ https://book.hacktricks.xyz/
++ https://ppn.snovvcrash.rocks/
++ https://kashz.gitbook.io/kashz-jewels/
 + https://wiki.bylibrary.cn/
 + https://forum.ywhack.com/bountytips.php
 + https://exploit-notes.hdks.org/
++ https://github.com/PeiQi0/PeiQi-WIKI-Book
++ https://wiki.teamssix.com/
++ https://wiki.wgpsec.org/
++ https://vulbase.vercel.app/qingy/
 
 # Xss平台
 + https://xss.report/
