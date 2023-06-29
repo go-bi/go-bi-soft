@@ -57,6 +57,7 @@ ufw status
 # 密码破解
 + https://hashes.com/
 + https://passwordrecovery.io/
++ https://weakpass.com/
   
 # 漏洞wiki
 + https://book.hacktricks.xyz/
