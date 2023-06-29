@@ -51,8 +51,13 @@ ufw status
 
 # 漏洞利用
 + https://sploitus.com/
-
-
+  
+# 安全学习实验室
++ https://attackdefense.com/
+# 密码破解
++ https://hashes.com/
++ https://passwordrecovery.io/
+  
 # 漏洞wiki
 + https://book.hacktricks.xyz/
 + https://ppn.snovvcrash.rocks/
