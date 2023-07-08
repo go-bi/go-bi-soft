@@ -1595,6 +1595,7 @@ wget https://ftp.tu-chemnitz.de/pub/linux/dag/redhat/el7/en/x86_64/rpmforge/RPMS
 + https://evolyutsiya.github.io/2019/09/22/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/
 + https://evolyutsiya.github.io/2019/09/22/upload-labs%E8%BF%87%E5%85%B3%E8%AE%B0%E5%BD%95/
 # sqlmap学习
++ https://cybr.com/ethical-hacking-archives/sqlmap-cheat-sheets-to-help-you-find-sql-injections/
 + https://book.hacktricks.xyz/pentesting-web/sql-injection/sqlmap
 + https://www.anquanke.com/post/id/188173
 + https://www.hacking8.com/sqlmap-parse/11.html
