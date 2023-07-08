@@ -1592,6 +1592,17 @@ wget https://ftp.tu-chemnitz.de/pub/linux/dag/redhat/el7/en/x86_64/rpmforge/RPMS
 + https://techvomit.net/pentesting-notes-and-snippets/
 + https://book.hacktricks.xyz/welcome/readme
 + https://haxez.org/
++ https://evolyutsiya.github.io/2019/09/22/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/
++ https://evolyutsiya.github.io/2019/09/22/upload-labs%E8%BF%87%E5%85%B3%E8%AE%B0%E5%BD%95/
+# sqlmap学习
++ https://book.hacktricks.xyz/pentesting-web/sql-injection/sqlmap
++ https://www.anquanke.com/post/id/188173
++ https://www.hacking8.com/sqlmap-parse/11.html
++ http://www.beesfun.com/2017/03/31/sqlmap%E4%BD%BF%E7%94%A8%E4%B9%8B%E8%87%AA%E5%AE%9A%E4%B9%89payload/
++ https://zhuanlan.zhihu.com/p/390240866
++ https://cloud.tencent.com/developer/article/1076399
++ https://lucadidomenico.medium.com/how-to-write-custom-tamper-scripts-for-sqlmap-93927808809e
++ https://blog.csdn.net/weixin_40418457/article/details/118789177
 
 # 在线反编译器
 + [JAR String Editor](https://www.decompiler.com/jar-string-editor)
