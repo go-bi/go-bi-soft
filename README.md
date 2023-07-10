@@ -1887,3 +1887,13 @@ db.username
 + https://www.11bsn.com/details/burpsuite-java-captchakiller-python-dddoc-identify-orcode/
 + https://mdnice.com/writing/5a6d8640e0f348c68cd479a093a068f8
 + https://www.jianshu.com/p/b85f7d4f8c49
+# burpsuitepro使用技巧
++ https://www.stationx.net/how-to-use-burp-suite/
++ https://github.com/NickLaughlin1/BurpSuiteGuide
++ https://github.com/iamyuthan/BurpSuitePro-Guide
++ https://parsiya.net/blog/2019-10-13-quality-of-life-tips-and-tricks-burp-suite/
++ https://infosecwriteups.com/6-burp-suite-tips-tricks-60592cf843ba
++ https://www.trustedsec.com/blog/intro-to-web-app-security-testing-burp-suite-tips-tricks/
++ https://blog.z-labs.eu/2022/01/12/burp-suite-pro-authn-for-cli-tools.html
++ https://www.pethuraj.com/blog/use-burpsuite-like-a-pro-part-1/
++ https://github.com/DingyShark/BurpSuiteCertifiedPractitioner
