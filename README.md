@@ -1891,6 +1891,7 @@ db.username
 + https://www.stationx.net/how-to-use-burp-suite/
 + https://github.com/NickLaughlin1/BurpSuiteGuide
 + https://github.com/iamyuthan/BurpSuitePro-Guide
++ https://s0cm0nkey.gitbook.io/s0cm0nkeys-security-reference-guide/red-offensive/scanning-active-recon/burp-suite
 + https://parsiya.net/blog/2019-10-13-quality-of-life-tips-and-tricks-burp-suite/
 + https://infosecwriteups.com/6-burp-suite-tips-tricks-60592cf843ba
 + https://www.trustedsec.com/blog/intro-to-web-app-security-testing-burp-suite-tips-tricks/
