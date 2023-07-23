@@ -341,6 +341,8 @@ mist download installer "13.0.1" iso --iso-name "Install-%NAME%-%VERSION%-%BUILD
 + https://hashes.com/zh/decrypt/hash
 + https://encode-decode.com/
 + https://hashcat.net/hashcat/
+  -  https://asecuritysite.com/subjects/chapter104
+  -  
 + https://www.jsjiami.com/
 + https://okjson.608558.com/encrypt/openssl_encode
 + https://www.devglan.com/online-tools/triple-des-encrypt-decrypt
