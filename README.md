@@ -72,6 +72,7 @@ ufw status
 + https://wiki.teamssix.com/
 + https://wiki.wgpsec.org/
 + https://vulbase.vercel.app/qingy/
++ https://www.cobalt.io/blog/author/busra-demir
 
 # Xss平台
 + https://xss.report/
@@ -98,6 +99,7 @@ ufw status
 + https://tb-manual.torproject.org/zh-CN/bridges/
 
 # 小工具
++ https://yaklang.io/
 + https://securityxploded.com/
 + https://mirrors.huaweicloud.com/home
 + http://www.nirsoft.net/
@@ -1904,3 +1906,11 @@ db.username
 + https://blog.z-labs.eu/2022/01/12/burp-suite-pro-authn-for-cli-tools.html
 + https://www.pethuraj.com/blog/use-burpsuite-like-a-pro-part-1/
 + https://github.com/DingyShark/BurpSuiteCertifiedPractitioner
+
+# fastjson 利用
++ https://blog.51cto.com/libai/5375917
++ https://y4er.com/posts/fastjson-1.2.80/
++ https://github.com/GrrrDog/Java-Deserialization-Cheat-Sheet
++ https://github.com/depycode/fastjson-local-echo
++ https://blog.harold.kim/2018/11/bctf2018-babyweb-writeup/
++ https://www.blackhat.com/docs/us-17/thursday/us-17-Munoz-Friday-The-13th-JSON-Attacks-wp.pdf
