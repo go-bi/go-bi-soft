@@ -341,7 +341,11 @@ mist download installer "13.0.1" iso --iso-name "Install-%NAME%-%VERSION%-%BUILD
 + https://hashes.com/zh/decrypt/hash
 + https://encode-decode.com/
 + https://hashcat.net/hashcat/
+  -  https://www.cpubenchmark.net/cpu_value_available.html
+  -  https://www.videocardbenchmark.net/mid_range_gpus.html
+  -  https://www.stationx.net/how-to-use-hashcat/
   -  https://asecuritysite.com/subjects/chapter104
+  -  https://bowneconsultingcontent.com/pub/EH/proj/H520.htm
   -  
 + https://www.jsjiami.com/
 + https://okjson.608558.com/encrypt/openssl_encode
