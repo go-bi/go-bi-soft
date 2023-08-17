@@ -1920,3 +1920,8 @@ db.username
 
 # shodan.io icon哈希生成
 + https://www.iblue.team/general-notes-1/favicon-hashing-and-hunting-with-shodan
+
+# 安全工具
++ https://stack.chaitin.com/tool/detail/1166
++ https://stack.chaitin.com/tool/detail/1036
++ https://stack.chaitin.com/tool/detail/31
