@@ -1705,6 +1705,9 @@ init:stop().  //退出Erlang Shell是使用init:stop函数完成的
 + https://mrd0x.com/download-and-execute-sliver-stager/
 
 ## sqlmap常见问题
++ https://www.mad-coding.cn/2020/02/08/sqlmap%E5%91%BD%E4%BB%A4%E9%9B%86%E5%90%88/#0x11-%E6%9A%B4%E5%8A%9B%E7%A0%B4%E8%A7%A3%E8%A1%A8%E5%90%8D
++ https://www.hacking8.com/sqlmap-parse/11.html
+  
 ### sqlmap自带shell、udf解码
 
 sqlmap中自带的shell以及一些二进制文件不能直接使用的，为防止被误杀都经过异或方式编码的（所幸sqlmap自带解码工具）
@@ -1914,3 +1917,6 @@ db.username
 + https://github.com/depycode/fastjson-local-echo
 + https://blog.harold.kim/2018/11/bctf2018-babyweb-writeup/
 + https://www.blackhat.com/docs/us-17/thursday/us-17-Munoz-Friday-The-13th-JSON-Attacks-wp.pdf
+
+# shodan.io icon哈希生成
++ https://www.iblue.team/general-notes-1/favicon-hashing-and-hunting-with-shodan
