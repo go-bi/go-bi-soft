@@ -100,6 +100,7 @@ ufw status
 + https://tb-manual.torproject.org/zh-CN/bridges/
 
 # 小工具
++ https://data.page/
 + https://yaklang.io/
 + https://securityxploded.com/
 + https://mirrors.huaweicloud.com/home
