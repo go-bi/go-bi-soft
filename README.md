@@ -74,6 +74,9 @@ ufw status
 + https://wiki.wgpsec.org/
 + https://vulbase.vercel.app/qingy/
 + https://www.cobalt.io/blog/author/busra-demir
++ https://www.onsecurity.io/blog/file-upload-checklist/
++ https://wiki.bafangwy.com/doc/323/
++ https://www.x86matthew.com/view_post?id=embed_exe_lnk
 
 # Xss平台
 + https://xss.report/
