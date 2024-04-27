@@ -29,6 +29,7 @@ ufw status
 + https://beta.shodan.io/search/filters
 + https://search.censys.io/
 + https://fofa.info/
++ https://www.startpage.com/
 + https://www.greynoise.io/
 + https://www.criminalip.io/
 + https://www.onyphe.io/
