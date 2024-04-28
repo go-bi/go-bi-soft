@@ -21,6 +21,16 @@ ufw status
 # 音乐下载
 + https://soundcloud.com/
   - https://chrome.google.com/webstore/detail/soundcloud-to-mp3-soundcl/bglggfjiagajfmchbcjolbggghckfhgm
+ 
+# chrome插件
+- https://chromewebstore.google.com/detail/instant-data-scraper/ofaokhiedipichpaobibbnahnkdoiiah
+- https://chromewebstore.google.com/detail/modheader-modify-http-hea/idgpnmonknjnojddfkpgkljpfnnfcklj
+- https://chromewebstore.google.com/detail/wappalyzer-technology-pro/gppongmhjkpfnbhagpmjfkannfbllamg
+- https://chromewebstore.google.com/detail/%E8%BA%AB%E4%BB%BD%E9%AA%8C%E8%AF%81%E5%99%A8/bhghoamapcdpbohphigoooaddinpkbai
+- https://chromewebstore.google.com/detail/shodan/jjalcfnidlmpjhdfepjhjbhnhkbgleap
+- https://chromewebstore.google.com/detail/proxy-switchyomega/padekgcemlokbadohgkifijomclgjgif
+- https://chromewebstore.google.com/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa
+
 # 搜索引擎
 + https://crt.sh/
 + https://otx.alienvault.com/
