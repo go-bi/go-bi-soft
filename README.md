@@ -67,6 +67,8 @@ ufw status
 
 # 漏洞利用
 + https://sploitus.com/
++ https://www.phrozen.io/
++ https://unprotect.it/techniques/
   
 # 安全学习实验室
 + https://attackdefense.com/
