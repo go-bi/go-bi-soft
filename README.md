@@ -54,6 +54,7 @@ ufw status
 + https://domainbigdata.com/
 + https://www.robtex.com/cidr/
 + https://zh-hans.ipshu.com/
++ https://www.skymem.info/
 
 # GPT
 + https://www.coze.com/
