@@ -21,7 +21,8 @@ ufw status
 # 音乐下载
 + https://soundcloud.com/
   - https://chrome.google.com/webstore/detail/soundcloud-to-mp3-soundcl/bglggfjiagajfmchbcjolbggghckfhgm
- 
++ https://motrix.app/zh-CN/download
+  
 # chrome插件
 - https://chromewebstore.google.com/detail/instant-data-scraper/ofaokhiedipichpaobibbnahnkdoiiah
 - https://chromewebstore.google.com/detail/modheader-modify-http-hea/idgpnmonknjnojddfkpgkljpfnnfcklj
