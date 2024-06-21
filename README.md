@@ -8,6 +8,7 @@ ufw status
 ```
 # 主机推荐
 + https://www.vultr.com/
++ https://my.racknerd.com/
 + https://www.dynu.com/
 + https://www.gmail.com/
 + https://contabo.com/de/
