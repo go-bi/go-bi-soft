@@ -126,6 +126,7 @@ ufw status
 + https://www.kahusecurity.com/tools.html
 + https://data.page/
 + https://yaklang.io/
++ https://tanggo.nosugar.tech/
 + https://securityxploded.com/
 + https://mirrors.huaweicloud.com/home
 + http://www.nirsoft.net/
