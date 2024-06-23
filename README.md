@@ -126,6 +126,10 @@ ufw status
 + https://www.kahusecurity.com/tools.html
 + https://data.page/
 + https://yaklang.io/
++ https://gobysec.net/
++ https://xray.cool/
++ https://stack.chaitin.com/tool/detail/1036
++ https://stack.chaitin.com/tool/detail/2
 + https://tanggo.nosugar.tech/
 + https://securityxploded.com/
 + https://mirrors.huaweicloud.com/home
