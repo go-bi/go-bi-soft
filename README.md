@@ -123,6 +123,7 @@ ufw status
 + https://tb-manual.torproject.org/zh-CN/bridges/
 
 # 小工具
++ https://www.ventoy.net/cn/
 + https://www.kahusecurity.com/tools.html
 + https://data.page/
 + https://yaklang.io/
