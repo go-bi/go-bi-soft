@@ -1553,6 +1553,7 @@ history -dw 352	//从Bash历史记录文件中删除某一行(例如352)
 history -r	//仅清除当前会话的Bash历史记录
 export HISTSIZE=0	//禁用当前会话的所有历史记录
 export HISTFILE=/dev/null	//丢弃当前会话的所有历史记录
+export HISTSIZE=0;export HISTFILE=/dev/null;set +o history
 [space]set +o history	//单次会话中禁用某一段命令记录
 [Space]set -o history	//单次会话中启用某一段命令记录
 ```
