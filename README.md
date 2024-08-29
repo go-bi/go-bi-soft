@@ -404,6 +404,7 @@ mist download installer "13.0.1" iso --iso-name "Install-%NAME%-%VERSION%-%BUILD
 + https://www.oracle.com/java/technologies/downloads/archive/
 + https://www.oracle.com/java/technologies/javase/javase8u211-later-archive-downloads.html
 + https://www.oracle.com/java/technologies/javase/jdk11-archive-downloads.html
++ https://www.openlogic.com/openjdk-downloads
   
 # jdk版本查看
 + https://javaalmanac.io/bytecode/versions/
