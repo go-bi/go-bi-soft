@@ -382,6 +382,11 @@ mist download installer "13.0.1" iso --iso-name "Install-%NAME%-%VERSION%-%BUILD
   -  https://bowneconsultingcontent.com/pub/EH/proj/H520.htm
   -  https://miloserdov.org/?p=7501
   -  下载解压cuda cuda_12.6.0_560.76_windows\cuda_nvrtc\nvrtc\bin 把nvrtc64_120_0.dll、nvrtc-builtins64_126.dll复制进hashcat即可
++ https://www.openwall.com/john/
+  - https://n-etupirka.net/entry/2022/11/30/184339
+  - https://kalitut.com/john-the-ripper/
+  - https://hackyourmom.com/en/servisy/soft/povnyj-posibnyk-z-john-the-ripper-ch-1-znajomstvo-ta-vstanovlennya-john-the-ripper/
+  - https://note.com/mkse/n/n4411674ebda4
 + https://www.jsjiami.com/
 + https://okjson.608558.com/encrypt/openssl_encode
 + https://www.devglan.com/online-tools/triple-des-encrypt-decrypt
