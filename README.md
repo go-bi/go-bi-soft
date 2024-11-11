@@ -23,6 +23,9 @@ ufw status
 + https://soundcloud.com/
   - https://chrome.google.com/webstore/detail/soundcloud-to-mp3-soundcl/bglggfjiagajfmchbcjolbggghckfhgm
 + https://motrix.app/zh-CN/download
+
+# openvpn客户端
++ https://openvpn.net/community-downloads/
   
 # chrome插件
 - https://chromewebstore.google.com/detail/instant-data-scraper/ofaokhiedipichpaobibbnahnkdoiiah
