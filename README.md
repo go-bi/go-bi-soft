@@ -82,6 +82,7 @@ ufw status
 + https://hashes.com/
 + https://passwordrecovery.io/
 + https://weakpass.com/
++ https://share.blandyuk.co.uk/apps/
   
 # 漏洞wiki
 + https://book.hacktricks.xyz/
