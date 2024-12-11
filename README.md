@@ -1656,6 +1656,7 @@ wget https://ftp.tu-chemnitz.de/pub/linux/dag/redhat/el7/en/x86_64/rpmforge/RPMS
 + https://cloud.tencent.com/developer/article/1076399
 + https://lucadidomenico.medium.com/how-to-write-custom-tamper-scripts-for-sqlmap-93927808809e
 + https://blog.csdn.net/weixin_40418457/article/details/118789177
++ https://www.stationx.net/sqlmap-cheat-sheet/
 
 # 在线反编译器
 + [JAR String Editor](https://www.decompiler.com/jar-string-editor)
