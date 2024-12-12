@@ -389,9 +389,9 @@ mist download installer "13.0.1" iso --iso-name "Install-%NAME%-%VERSION%-%BUILD
   -  https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html#cuda-major-component-versions
   -  https://miloserdov.org/?p=7501
   -  下载解压cuda cuda_12.6.0_560.76_windows\cuda_nvrtc\nvrtc\bin 把nvrtc64_120_0.dll、nvrtc-builtins64_126.dll复制进hashcat即可
-    hashcat -I  列出可用的设备
-    hashcat -d 1 -m <hash_type> <hash_file> <wordlist>  选择特定的显卡
-    hashcat -d 1,2 -m <hash_type> <hash_file> <wordlist>  使用多个显卡
+  -  hashcat -I  列出可用的设备
+  -  hashcat -d 1 -m <hash_type> <hash_file> <wordlist>  选择特定的显卡
+  -  hashcat -d 1,2 -m <hash_type> <hash_file> <wordlist>  使用多个显卡
 + https://www.openwall.com/john/
   - https://n-etupirka.net/entry/2022/11/30/184339
   - https://kalitut.com/john-the-ripper/
