@@ -17,6 +17,7 @@ ufw status
 + https://localxpose.io/
 + http://localhost.run/
 + https://rport.io/
++ https://duckduckgo.com/?q=DuckDuckGo+AI+Chat&ia=chat&duckai=1
 # Vultr镜像
 + https://write.corbpie.com/installing-windows-10-pro-iso-with-virtio-on-vultr/
 # 音乐下载
