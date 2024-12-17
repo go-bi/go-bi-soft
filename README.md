@@ -84,6 +84,9 @@ ufw status
 + https://passwordrecovery.io/
 + https://weakpass.com/
 + https://share.blandyuk.co.uk/apps/
+
+# keygen
++ https://notabug.org/doublesine/winrar-keygen
   
 # 漏洞wiki
 + https://book.hacktricks.xyz/
