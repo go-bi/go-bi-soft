@@ -133,6 +133,7 @@ ufw status
 # 小工具
 + https://www.ventoy.net/cn/
 + https://www.kahusecurity.com/tools.html
++ https://www.komodolabs.com/ip-scanner/
 + https://data.page/
 + https://yaklang.io/
 + https://gobysec.net/
