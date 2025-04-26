@@ -442,6 +442,13 @@ python2.7.9默认自带pip版
 https://www.python.org/ftp/python/2.7.9/python-2.7.9.amd64.msi
 https://www.python.org/ftp/python/3.10.7/python-3.10.7-amd64.exe
 ```
+## python自动把需要的模块打包
+要自动将 test.py 中需要的模块打包到 requests.txt 文件中,这将生成一个 requirements.txt 文件，其中包含 test.py 中使用的所有模块及其版本
+```
+pip install pipreqs
+pipreqs . --force
+```
+
 ## emeditor常用正则表达式
 
 ```
