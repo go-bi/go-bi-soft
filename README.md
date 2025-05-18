@@ -132,6 +132,7 @@ ufw status
 + https://tb-manual.torproject.org/zh-CN/bridges/
 
 # 小工具
++ https://wpd.app/
 + https://www.ventoy.net/cn/
 + https://www.kahusecurity.com/tools.html
 + https://www.komodolabs.com/ip-scanner/
