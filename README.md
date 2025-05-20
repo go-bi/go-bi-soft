@@ -1991,3 +1991,11 @@ db.username
 + https://stack.chaitin.com/tool/detail/1166
 + https://stack.chaitin.com/tool/detail/1036
 + https://stack.chaitin.com/tool/detail/31
+
+# 内存转储敏感信息查询
+```
+strings heapdump | grep -B 2 -A 2 "eyJ"
+strings heapdump | grep -B 2 -A 2 "AKIA"
+strings heapdump | grep -E "^Host:\s+\S+$" -C 10
+strings heapdump | grep -E "AKIA|eyJ"
+```
