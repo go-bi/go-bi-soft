@@ -1976,6 +1976,30 @@ db.username
 + https://blog.z-labs.eu/2022/01/12/burp-suite-pro-authn-for-cli-tools.html
 + https://www.pethuraj.com/blog/use-burpsuite-like-a-pro-part-1/
 + https://github.com/DingyShark/BurpSuiteCertifiedPractitioner
++  https://security.stackexchange.com/questions/247826/how-to-load-files-in-tls-pass-through-in-burp-suite
+```
+{
+    "proxy":{
+        "ssl_pass_through":{
+            "automatically_add_entries_on_client_ssl_negotiation_failure":false,
+            "rules":[
+                {
+                    "enabled":true,
+                    "host":"^*\\.mozilla\\.(com|net|org)$",
+                    "protocol":"any"
+                },
+                {
+                    "enabled":true,
+                    "host":"^*\\.google\\.com$",
+                    "protocol":"any"
+                },
+               etc..
+            ]
+        }
+    }
+}
+```
+
 
 # fastjson 利用
 + https://blog.51cto.com/libai/5375917
