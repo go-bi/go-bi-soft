@@ -1977,23 +1977,104 @@ db.username
 + https://www.pethuraj.com/blog/use-burpsuite-like-a-pro-part-1/
 + https://github.com/DingyShark/BurpSuiteCertifiedPractitioner
 +  https://security.stackexchange.com/questions/247826/how-to-load-files-in-tls-pass-through-in-burp-suite
+
+如果您想要创建一个正则表达式来匹配 google.com、google.com.hk 以及其所有子域名（如 www.google.com、log.google.com、log2.google.com.hk 等），可以使用以下的正则表达式：
+```
+^(.*\.)?google\.(com|com\.hk)$
+```
+解释：
+  ^：表示字符串的开始。
+  (.*\.)?：可选的部分，匹配任意子域名（包括没有子域名的情况）。.* 表示匹配任意字符（包括零个或多个字符），后面的 \. 匹配一个点，问号 ? 表示这个部分可以出现零次或一次。
+  google\.：匹配主域名 google.。
+  (com|com\.hk)：匹配 .com 或 .com.hk。
+  $：表示字符串的结束。
 ```
 {
     "proxy":{
         "ssl_pass_through":{
+            "apply_to_out_of_scope_items":true,
             "automatically_add_entries_on_client_ssl_negotiation_failure":false,
             "rules":[
                 {
                     "enabled":true,
-                    "host":"^*\\.mozilla\\.(com|net|org)$",
+                    "host":"^.*\\.adspower\\.(com|net)$",
                     "protocol":"any"
                 },
                 {
                     "enabled":true,
-                    "host":"^*\\.google\\.com$",
+                    "host":"^.*\\.cloudflare\\.com$",
                     "protocol":"any"
                 },
-               etc..
+                {
+                    "enabled":true,
+                    "host":"^.*\\.doubleclick\\.net$",
+                    "protocol":"any"
+                },
+                {
+                    "enabled":true,
+                    "host":"^.*\\.google-analytics\\.com$",
+                    "protocol":"any"
+                },
+                {
+                    "enabled":true,
+                    "host":"^(.*\\.)?google\\.(com|cn|com\\.hk)$",
+                    "protocol":"any"
+                },
+                {
+                    "enabled":true,
+                    "host":"^.*\\.googleadservices\\.com$",
+                    "protocol":"any"
+                },
+                {
+                    "enabled":true,
+                    "host":"^.*\\.googleapis\\.com$",
+                    "protocol":"any"
+                },
+                {
+                    "enabled":true,
+                    "host":"^.*\\.googletagmanager\\.com$",
+                    "protocol":"any"
+                },
+                {
+                    "enabled":true,
+                    "host":"^(.*\\.)?gstatic\\.com$",
+                    "protocol":"any"
+                },
+                {
+                    "enabled":true,
+                    "host":"^.*\\.jsdelivr\\.net$",
+                    "protocol":"any"
+                },
+                {
+                    "enabled":true,
+                    "host":"^(.*\\.)?youtube\\.com$",
+                    "protocol":"any"
+                },
+                {
+                    "enabled":true,
+                    "host":"^.*\\.ytimg\\.com$",
+                    "protocol":"any"
+                },
+                {
+                    "enabled":true,
+                    "host":"^cdn\\.jsdelivr\\.net$",
+                    "protocol":"any"
+                },
+                {
+                    "enabled":true,
+                    "host":"^cdnjs\\.cloudflare\\.com$",
+                    "protocol":"any"
+                },
+                {
+                    "enabled":true,
+                    "host":"^unpkg\\.com$",
+                    "protocol":"any"
+                },
+                {
+                    "enabled":true,
+                    "host":"^code\\.jquery\\.com$",
+                    "protocol":"any"
+                }
             ]
         }
     }
