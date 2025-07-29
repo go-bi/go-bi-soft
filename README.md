@@ -28,6 +28,9 @@ ufw status
 # openvpn客户端
 + https://openvpn.net/community-downloads/
   
+# oss、s3存储桶资源管理器
++ https://www.alibabacloud.com/help/zh/oss/developer-reference/common-tools/?spm=a2c63.p38356.0.0.438719ed6533xG
++ https://s3browser.com/
 # chrome插件
 - https://chromewebstore.google.com/detail/instant-data-scraper/ofaokhiedipichpaobibbnahnkdoiiah
 - https://chromewebstore.google.com/detail/modheader-modify-http-hea/idgpnmonknjnojddfkpgkljpfnnfcklj
