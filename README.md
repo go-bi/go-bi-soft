@@ -1630,6 +1630,7 @@ wget https://ftp.tu-chemnitz.de/pub/linux/dag/redhat/el7/en/x86_64/rpmforge/RPMS
 
 # 编辑器
 + [EmEditor](https://www.emeditor.com/)
+  + https://download.emeditor.info/emed64_22.2.0.msi 无提示版
   + DMAZM-WHY52-AX222-ZQJXN-79JXH
 + [Sublime Text](https://www.sublimetext.com/) 
 + [Notepad++](https://github.com/notepad-plus-plus/notepad-plus-plus/releases)
