@@ -2109,3 +2109,10 @@ strings heapdump | grep -B 2 -A 2 "AKIA"
 strings heapdump | grep -E "^Host:\s+\S+$" -C 10
 strings heapdump | grep -E "AKIA|eyJ"
 ```
+# docker 镜像拉取查看
+```
+docker pull git.xxx.com/cpg/frontend:latest  //拉取镜像
+docker images  //查看本地所有镜像
+docker inspect <镜像名称或ID>  //查看镜像的详细信息,根据diff目录查看配置文件
+
+```
