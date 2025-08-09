@@ -2114,5 +2114,6 @@ strings heapdump | grep -E "AKIA|eyJ"
 docker pull git.xxx.com/cpg/frontend:latest  //拉取镜像
 docker images  //查看本地所有镜像
 docker inspect <镜像名称或ID>  //查看镜像的详细信息,根据diff目录查看配置文件
-
+docker image prune -a  //删除所有未被使用的镜像
+docker rmi $(docker images -q)  //强制删除所有镜像
 ```
