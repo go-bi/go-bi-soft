@@ -5,6 +5,7 @@ ufw delete allow 22
 ufw enable
 ufw disable
 ufw status
+seq -w 0000 9999 >list.txt  //生成4位数字列表0000-9999
 ```
 # 主机推荐
 + https://www.vultr.com/
