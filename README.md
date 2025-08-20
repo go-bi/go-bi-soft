@@ -6,6 +6,7 @@ ufw enable
 ufw disable
 ufw status
 seq -w 0000 9999 >list.txt  //生成4位数字列表0000-9999
+seq 10080 10089 >list.txt  //生成5位固定格式数字列表10080-10089
 ```
 # 主机推荐
 + https://www.vultr.com/
