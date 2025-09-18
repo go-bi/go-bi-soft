@@ -26,6 +26,7 @@ seq 10080 10089 >list.txt  //生成5位固定格式数字列表10080-10089
 + https://soundcloud.com/
   - https://chrome.google.com/webstore/detail/soundcloud-to-mp3-soundcl/bglggfjiagajfmchbcjolbggghckfhgm
 + https://motrix.app/zh-CN/download
++ https://www.gopeed.com/zh-CN
 
 # openvpn客户端
 + https://openvpn.net/community-downloads/
