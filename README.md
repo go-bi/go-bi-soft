@@ -458,6 +458,12 @@ https://www.python.org/ftp/python/3.10.7/python-3.10.7-amd64.exe
 pip install pipreqs
 pipreqs . --force
 ```
+## python3 虚拟环境
+```
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
 
 ## emeditor常用正则表达式
 
