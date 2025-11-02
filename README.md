@@ -164,6 +164,7 @@ seq 10080 10089 >list.txt  //生成5位固定格式数字列表10080-10089
     提取码：SA08
 + https://download.xshell.com/27397819/Xmanager-7.0.0112.exe
 + https://www.roxybrowser.com/zh
++ https://offsec.tools/
 
 # 自定义linux发行版
 + https://www.ventoy.net/cn/isolist.html
