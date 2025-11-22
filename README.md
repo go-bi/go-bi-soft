@@ -84,6 +84,7 @@ seq 10080 10089 >list.txt  //生成5位固定格式数字列表10080-10089
 + https://sploitus.com/
 + https://www.phrozen.io/
 + https://unprotect.it/techniques/
++ https://purecoder.io/description/purerat.html
   
 # 安全学习实验室
 + https://attackdefense.com/
