@@ -140,6 +140,7 @@ seq 10080 10089 >list.txt  //生成5位固定格式数字列表10080-10089
 + https://tb-manual.torproject.org/zh-CN/bridges/
 
 # 小工具
++ https://cursor.com/
 + https://wpd.app/
 + https://www.ventoy.net/cn/
 + https://www.kahusecurity.com/tools.html
