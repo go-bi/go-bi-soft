@@ -1818,9 +1818,9 @@ Options:
 ```
 sqlmap --headers="Host:www.baidu.com\nUser-Agent:baidu.com"
 ```
-### sqlmap https默认无法识别漏洞
+### sqlmap xray盲注识别
 ```
-sqlmap --force-ssl
+sqlmap --force-ssl --delay 10
 ```
 ### sqlmap宽字节注入
 ```
