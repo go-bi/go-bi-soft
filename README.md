@@ -2135,6 +2135,7 @@ strings heapdump | grep -B 2 -A 2 "AKIA"
 strings heapdump | grep -E "^Host:\s+\S+$" -C 10
 strings heapdump | grep -E "AKIA|eyJ"
 strings heapdump | grep -i "Cookie:"
+strings heapdump | grep -i "\"\,\"password\"\:\""
 strings heapdump | grep -iE "password|token|secret|key|cred|hash|authorization|pwd|passwd|db_url|ldap|jdbc|connection"
 ```
 # docker 镜像拉取查看
