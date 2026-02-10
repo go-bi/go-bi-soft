@@ -101,6 +101,7 @@ seq 10080 10089 >list.txt  //生成5位固定格式数字列表10080-10089
 # 漏洞wiki
 + https://book.hacktricks.xyz/
 + https://ppn.snovvcrash.rocks/
++ https://www.pentest-book.com/
 + https://kashz.gitbook.io/kashz-jewels/
 + https://ed4m4s.blog/
 + https://docs.h4rithd.com/
