@@ -167,6 +167,7 @@ seq 10080 10089 >list.txt  //生成5位固定格式数字列表10080-10089
     https://pan.baidu.com/share/init?surl=NtudvgaGhNa0mWtfkoqCOg
     提取码：SA08
 + https://download.xshell.com/27397819/Xmanager-7.0.0112.exe
++ https://www.adspower.net/
 + https://www.roxybrowser.com/zh
 + https://offsec.tools/
 
