@@ -170,6 +170,7 @@ seq 10080 10089 >list.txt  //生成5位固定格式数字列表10080-10089
 + https://www.adspower.net/
 + https://www.roxybrowser.com/zh
 + https://offsec.tools/
++ https://github.com/TGSAN/CMWTAT_Digital_Edition
 
 # 自定义linux发行版
 + https://www.ventoy.net/cn/isolist.html
